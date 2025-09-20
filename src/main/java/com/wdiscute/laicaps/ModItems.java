@@ -39,37 +39,12 @@ public class ModItems
     //`--'     `--' `-----'  `--'  `--' `--' `--'  `--'  `------'
     //
 
-    public static final DeferredItem<Item> FISHING_GUIDE = ITEMS.register("fishing_guide", () -> new FishingGuideItem(new Item.Properties()));
-
-
-    public static final DeferredItem<Item> STARCATCHER_TWINE = ITEMS.register("starcatcher_twine", () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> STARCATCHER_FISHING_ROD = ITEMS.register(
-            "starcatcher_fishing_rod",
-            () -> new StarcatcherFishingRod(
-                    new Item.Properties()
-                            .rarity(Rarity.EPIC)
-                            .stacksTo(1)
-                            .component(ModDataComponents.BOBBER.get(), ItemContainerContents.fromItems(List.of(ItemStack.EMPTY)))
-                            .component(ModDataComponents.BAIT.get(), ItemContainerContents.fromItems(List.of(ItemStack.EMPTY))))
-    );
-
     //bobbers
     public static final DeferredItem<Item> OAKHEART_BERRIES_BAIT = ITEMS.register("oakheart_berries_bait", () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> CREEPER_BOBBER = ITEMS.register("creeper_bobber", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> TREASURE_BOBBER = ITEMS.register("treasure_bobber", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BAIT_SAVING_BOBBER = ITEMS.register("bait_saving_bobber", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DIFFICULTY_BOBBER = ITEMS.register("difficulty_bobber", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FAST_BITING_BOBBER = ITEMS.register("fast_biting_bobber", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FISH_SPOTTER = ITEMS.register("fish_spotter", () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> WATERLOGGED_SATCHEL = ITEMS.register("waterlogged_satchel", () -> new Item(new Item.Properties()));
 
 
     //fishing fishes
-
-    public static final DeferredItem<Item> FISH_BONES = ITEMS.register("fish_bones", () -> new Item(new Item.Properties().food(ModFoodProperties.EEL)));
 
     //asha
     public static final DeferredItem<Item> RED_HERRING = ITEMS.register("red_herring", () -> new Item(new Item.Properties().food(ModFoodProperties.BASIC_RAW_FISH)));
@@ -89,7 +64,6 @@ public class ModItems
     public static final DeferredItem<Item> JEWEL_KOI = ITEMS.register("jewel_koi", () -> new Item(new Item.Properties().food(ModFoodProperties.BASIC_RAW_FISH)));
     public static final DeferredItem<Item> SOLAR_KOI = ITEMS.register("solar_koi", () -> new Item(new Item.Properties().food(ModFoodProperties.BASIC_RAW_FISH)));
     public static final DeferredItem<Item> LAKE_SNAPPER = ITEMS.register("lake_snapper", () -> new Item(new Item.Properties().food(ModFoodProperties.BASIC_RAW_FISH)));
-
 
     //lunamar
     public static final DeferredItem<Item> CRIMSON_STARFISH = ITEMS.register("crimson_starfish", () -> new Item(new Item.Properties().food(ModFoodProperties.EEL)));
@@ -115,7 +89,6 @@ public class ModItems
     public static final DeferredItem<Item> LORD_OF_DEATH_AND_DOOM = ITEMS.register("lord_of_death_and_doom", () -> new Item(new Item.Properties().food(ModFoodProperties.LORD_OF_DEATH_AND_DOOM)));
     public static final DeferredItem<Item> GHOTI = ITEMS.register("ghoti", () -> new Item(new Item.Properties().food(ModFoodProperties.BASIC_RAW_FISH)));
     public static final DeferredItem<Item> SKYYFISH = ITEMS.register("skyyfish", () -> new Item(new Item.Properties().food(ModFoodProperties.BASIC_RAW_FISH)));
-
 
 
     //

@@ -5,7 +5,7 @@ import com.wdiscute.laicaps.entity.rocket.rocketparts.*;
 import com.wdiscute.laicaps.mixin.JumpingAcessor;
 import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.Payloads;
 import com.wdiscute.laicaps.util.AdvHelper;
-import com.wdiscute.laicaps.util.Tooltips;
+import com.wdiscute.libtooltips.Tooltips;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;

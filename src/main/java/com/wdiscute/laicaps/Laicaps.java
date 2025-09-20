@@ -44,13 +44,11 @@ import com.wdiscute.laicaps.fishing.FishTrackerLayer;
 import com.wdiscute.laicaps.fishing.FishingRodScreen;
 import com.wdiscute.laicaps.item.ModDataComponents;
 import com.wdiscute.laicaps.entity.boat.ModBoatRenderer;
-import com.wdiscute.laicaps.item.ModItemProperties;
 import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.ModDataAttachments;
 import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.PayloadReceiver;
 import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.Payloads;
 import com.wdiscute.laicaps.notebook.EntryUnlockedToast;
 import com.wdiscute.laicaps.particle.*;
-import com.wdiscute.laicaps.util.Tooltips;
 import com.wdiscute.laicaps.worldgen.ModFeatures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.BoatModel;
@@ -60,6 +58,7 @@ import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
@@ -104,8 +103,6 @@ public class Laicaps
     public static final int OVERWORLD_ENTRIES = 4;
     public static final int LUNAMAR_ENTRIES = 4;
 
-    public static float hue;
-
 
     public static ResourceLocation rl(String s)
     {
@@ -128,7 +125,6 @@ public class Laicaps
 
     public Laicaps(IEventBus modEventBus, ModContainer modContainer)
     {
-        NeoForge.EVENT_BUS.addListener(Tooltips::modifyItemTooltip);
         //NeoForge.EVENT_BUS.addListener(EntriesChecks::itemPickupEvent);
 
         ModCreativeModeTabs.register(modEventBus);
@@ -164,19 +160,11 @@ public class Laicaps
 
         @OnlyIn(Dist.CLIENT)
         @SubscribeEvent
-        public static void renderFrame(RenderFrameEvent.Post event)
-        {
-            Laicaps.hue += 0.001f;
-        }
-
-        @OnlyIn(Dist.CLIENT)
-        @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             Sheets.addWoodType(ModWoodTypes.OAKROOT);
             Sheets.addWoodType(ModWoodTypes.OAKHEART);
 
-            ModItemProperties.addCustomItemProperties();
 
 
             event.enqueueWork(() ->
@@ -352,17 +340,6 @@ public class Laicaps
         public static void registerPayloads(final RegisterPayloadHandlersEvent event)
         {
             final PayloadRegistrar registrar = event.registrar("1");
-            registrar.playToClient(
-                    Payloads.FishingPayload.TYPE,
-                    Payloads.FishingPayload.STREAM_CODEC,
-                    PayloadReceiver::receiveFishingClient
-            );
-
-            registrar.playToServer(
-                    Payloads.FishingCompletedPayload.TYPE,
-                    Payloads.FishingCompletedPayload.STREAM_CODEC,
-                    PayloadReceiver::receiveFishingCompletedServer
-            );
 
             registrar.playToClient(
                     Payloads.EntryUnlockedPayload.TYPE,
@@ -370,11 +347,6 @@ public class Laicaps
                     PayloadReceiver::receiveEntryUnlocked
             );
 
-            registrar.playToClient(
-                    Payloads.FishCaughtPayload.TYPE,
-                    Payloads.FishCaughtPayload.STREAM_CODEC,
-                    PayloadReceiver::receiveFishCaught
-            );
 
             registrar.playToServer(
                     Payloads.ChangePlanetSelected.TYPE,

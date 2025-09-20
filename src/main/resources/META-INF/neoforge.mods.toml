@@ -44,7 +44,7 @@ logoFile="laicaps 400x400.png" #optional
 authors="wdiscute, Nikdo53, daffydj" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''A fantasy space exploration mod'''
+description='''A fantasy Space Exploration mod'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 [[mixins]]
@@ -75,6 +75,14 @@ versionRange="${neo_version_range}" #mandatory
 ordering="AFTER"
 # Side this dependency is applied on - BOTH, CLIENT, or SERVER
 side="BOTH"
+
+[[dependencies.laicaps]]
+modId="libtooltips"
+type="required"
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="1.0.0"
+ordering="AFTER"
+side="CLIENT"
 
 # Here's another dependency
 [[dependencies.laicaps]]

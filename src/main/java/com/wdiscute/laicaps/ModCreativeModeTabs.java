@@ -41,20 +41,7 @@ public class ModCreativeModeTabs
                                 output.accept(ModItems.OVERWORLD_ENTRY.get());
 
                                 //fishing
-                                output.accept(ModItems.FISHING_GUIDE.get());
-                                output.accept(ModItems.STARCATCHER_FISHING_ROD.get());
-                                output.accept(ModItems.STARCATCHER_TWINE.get());
-
                                 output.accept(ModItems.OAKHEART_BERRIES_BAIT.get());
-
-                                output.accept(ModItems.BAIT_SAVING_BOBBER.get());
-                                output.accept(ModItems.DIFFICULTY_BOBBER.get());
-                                output.accept(ModItems.CREEPER_BOBBER.get());
-                                output.accept(ModItems.TREASURE_BOBBER.get());
-                                output.accept(ModItems.FAST_BITING_BOBBER.get());
-                                output.accept(ModItems.WATERLOGGED_SATCHEL.get());
-                                output.accept(ModItems.FISH_BONES.get());
-
 
                                 //rocket stuff
                                 output.accept(ModItems.SPACESHIP_BLUEPRINT.get());
