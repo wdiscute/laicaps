@@ -177,9 +177,6 @@ public class Laicaps
             event.registerSpriteSet(ModParticles.LUNARVEIL_PARTICLES.get(), LunarveilParticles.Provider::new);
             event.registerSpriteSet(ModParticles.ROCKET_FIRE_PARTICLES.get(), RocketFireParticles.Provider::new);
             event.registerSpriteSet(ModParticles.ROCKET_FIRE_SIMPLE_PARTICLES.get(), RocketFireSimpleParticles.Provider::new);
-            event.registerSpriteSet(ModParticles.FISHING_NOTIFICATION.get(), FishingNotificationParticles.Provider::new);
-            event.registerSpriteSet(ModParticles.FISHING_BITING.get(), FishingBitingParticles.Provider::new);
-
             event.registerSpriteSet(ModParticles.ROCK_FALLING.get(), RockParticles.Provider::new);
             event.registerSpriteSet(ModParticles.ROCK_EXPLOSION.get(), RockExplosionParticles.Provider::new);
         }
