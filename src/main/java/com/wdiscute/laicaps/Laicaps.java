@@ -11,7 +11,6 @@ import com.wdiscute.laicaps.entity.boat.ModModelLayers;
 import com.wdiscute.laicaps.entity.bubblemouth.BubblemouthEntity;
 import com.wdiscute.laicaps.entity.bubblemouth.BubblemouthModel;
 import com.wdiscute.laicaps.entity.bubblemouth.BubblemouthRenderer;
-import com.wdiscute.laicaps.entity.fishing.FishingBobModel;
 import com.wdiscute.laicaps.entity.glimpuff.GlimpuffEntity;
 import com.wdiscute.laicaps.entity.glimpuff.GlimpuffModel;
 import com.wdiscute.laicaps.entity.glimpuff.GlimpuffRenderer;
@@ -37,11 +36,6 @@ import com.wdiscute.laicaps.entity.snuffler.SnufflerRenderer;
 import com.wdiscute.laicaps.entity.swibble.SwibbleEntity;
 import com.wdiscute.laicaps.entity.swibble.SwibbleModel;
 import com.wdiscute.laicaps.entity.swibble.SwibbleRenderer;
-import com.wdiscute.laicaps.entity.fishing.FishingBobRenderer;
-import com.wdiscute.laicaps.fishing.FishCaughtToast;
-import com.wdiscute.laicaps.fishing.FishProperties;
-import com.wdiscute.laicaps.fishing.FishTrackerLayer;
-import com.wdiscute.laicaps.fishing.FishingRodScreen;
 import com.wdiscute.laicaps.item.ModDataComponents;
 import com.wdiscute.laicaps.entity.boat.ModBoatRenderer;
 import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.ModDataAttachments;
@@ -58,7 +52,6 @@ import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
@@ -66,9 +59,6 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.WaterAnimal;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -83,12 +73,10 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.*;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
-import net.neoforged.neoforge.registries.DataPackRegistryEvent;
 import org.slf4j.Logger;
 
 @Mod(Laicaps.MOD_ID)
@@ -116,13 +104,6 @@ public class Laicaps
         Minecraft.getInstance().getToasts().addToast(new EntryUnlockedToast(menuName, entryName));
     }
 
-    @OnlyIn(Dist.CLIENT)
-    public static void fishCaughtToast(ItemStack is)
-    {
-        Minecraft.getInstance().getToasts().addToast(new FishCaughtToast(is));
-    }
-
-
     public Laicaps(IEventBus modEventBus, ModContainer modContainer)
     {
         //NeoForge.EVENT_BUS.addListener(EntriesChecks::itemPickupEvent);
@@ -148,24 +129,12 @@ public class Laicaps
     public static class ModEvents
     {
 
-        @SubscribeEvent
-        public static void addRegistry(DataPackRegistryEvent.NewRegistry event)
-        {
-            event.dataPackRegistry(
-                    LaicapsKeys.FISH_REGISTRY,
-                    FishProperties.RECORD_CODEC,
-                    FishProperties.RECORD_CODEC,
-                    builder -> builder.maxId(256));
-        }
-
         @OnlyIn(Dist.CLIENT)
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             Sheets.addWoodType(ModWoodTypes.OAKROOT);
             Sheets.addWoodType(ModWoodTypes.OAKHEART);
-
-
 
             event.enqueueWork(() ->
             {
@@ -188,9 +157,6 @@ public class Laicaps
             EntityRenderers.register(ModEntities.SHIELD.get(), ShieldRenderer::new);
             EntityRenderers.register(ModEntities.ROCK.get(), RockRenderer::new);
 
-            EntityRenderers.register(ModEntities.FISHING_BOB.get(), FishingBobRenderer::new);
-
-
             EntityRenderers.register(ModEntities.BLUETALE.get(), BluetaleRenderer::new);
             EntityRenderers.register(ModEntities.REDTALE.get(), RedtaleRenderer::new);
             EntityRenderers.register(ModEntities.BUBBLEMOUTH.get(), BubblemouthRenderer::new);
@@ -200,13 +166,6 @@ public class Laicaps
             EntityRenderers.register(ModEntities.NIMBLE.get(), NimbleRenderer::new);
             EntityRenderers.register(ModEntities.SNUFFLER.get(), SnufflerRenderer::new);
 
-        }
-
-        @OnlyIn(Dist.CLIENT)
-        @SubscribeEvent
-        public static void FishSpotterLayer(RegisterGuiLayersEvent event)
-        {
-            event.registerAboveAll(Laicaps.rl("fish_tracker"), new FishTrackerLayer());
         }
 
         @OnlyIn(Dist.CLIENT)
@@ -231,7 +190,6 @@ public class Laicaps
         {
             event.register(ModMenuTypes.TELESCOPE_MENU.get(), TelescopeScreen::new);
             event.register(ModMenuTypes.NOTEBOOK_MENU.get(), NotebookScreen::new);
-            event.register(ModMenuTypes.FISHING_ROD_MENU.get(), FishingRodScreen::new);
             event.register(ModMenuTypes.REFUEL_MENU.get(), RefuelScreen::new);
         }
 
@@ -271,8 +229,6 @@ public class Laicaps
             event.registerLayerDefinition(MagmaModel.LAYER_LOCATION, MagmaModel::createBodyLayer);
             event.registerLayerDefinition(ShieldModel.LAYER_LOCATION, ShieldModel::createBodyLayer);
             event.registerLayerDefinition(RockModel.LAYER_LOCATION, RockModel::createBodyLayer);
-
-            event.registerLayerDefinition(FishingBobModel.LAYER_LOCATION, FishingBobModel::createBodyLayer);
         }
 
         @SubscribeEvent

@@ -2,8 +2,6 @@ package com.wdiscute.laicaps;
 
 
 import com.wdiscute.laicaps.entity.boat.ModBoatEntity;
-import com.wdiscute.laicaps.fishing.FishingGuideItem;
-import com.wdiscute.laicaps.item.StarcatcherFishingRod;
 import com.wdiscute.laicaps.item.*;
 
 
@@ -12,13 +10,10 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.material.Fluids;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 public class ModItems
 {
@@ -39,10 +34,8 @@ public class ModItems
     //`--'     `--' `-----'  `--'  `--' `--' `--'  `--'  `------'
     //
 
-    //bobbers
+    //baits and bobbers
     public static final DeferredItem<Item> OAKHEART_BERRIES_BAIT = ITEMS.register("oakheart_berries_bait", () -> new Item(new Item.Properties()));
-
-
 
     //fishing fishes
 

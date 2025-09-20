@@ -14,7 +14,6 @@ import com.wdiscute.laicaps.entity.nimble.NimbleEntity;
 import com.wdiscute.laicaps.entity.rocket.RE;
 import com.wdiscute.laicaps.entity.snuffler.SnufflerEntity;
 import com.wdiscute.laicaps.entity.swibble.SwibbleEntity;
-import com.wdiscute.laicaps.entity.fishing.FishingBobEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -78,9 +77,6 @@ public class ModEntities
             ENTITY_TYPES.register("rocket", () -> EntityType.Builder.of(RE::new, MobCategory.MISC)
                     .sized(1f, 1f).build("rocket"));
 
-    public static final Supplier<EntityType<FishingBobEntity>> FISHING_BOB =
-            registerKapiten("fishing_bob", FishingBobEntity::new, MobCategory.MISC,
-                    b -> b.noSummon().noSave().sized(0.3f, 0.3f));
 
     public static final Supplier<EntityType<MagmaEntity>> MAGMA =
             ENTITY_TYPES.register("magma", () -> EntityType.Builder.of(MagmaEntity::new, MobCategory.MONSTER)

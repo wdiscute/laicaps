@@ -1,7 +1,6 @@
 package com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp;
 
 import com.wdiscute.laicaps.Laicaps;
-import com.wdiscute.laicaps.fishing.FishProperties;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
@@ -11,48 +10,6 @@ import net.minecraft.world.item.ItemStack;
 
 public class Payloads
 {
-
-    public record FishingPayload(ItemStack stack, ItemStack bobber, ItemStack bait, int difficulty) implements CustomPacketPayload
-    {
-
-        public static final CustomPacketPayload.Type<FishingPayload> TYPE = new CustomPacketPayload.Type<>(Laicaps.rl("fishing"));
-
-        public static final StreamCodec<ByteBuf, FishingPayload> STREAM_CODEC = StreamCodec.composite(
-                ByteBufCodecs.fromCodec(ItemStack.CODEC),
-                FishingPayload::stack,
-                ByteBufCodecs.fromCodec(ItemStack.CODEC),
-                FishingPayload::bobber,
-                ByteBufCodecs.fromCodec(ItemStack.CODEC),
-                FishingPayload::bait,
-                ByteBufCodecs.INT,
-                FishingPayload::difficulty,
-                FishingPayload::new
-        );
-
-        @Override
-        public CustomPacketPayload.Type<? extends CustomPacketPayload> type() {
-            return TYPE;
-        }
-    }
-
-
-    public record FishingCompletedPayload(int time) implements CustomPacketPayload
-    {
-
-        public static final CustomPacketPayload.Type<FishingCompletedPayload> TYPE = new CustomPacketPayload.Type<>(Laicaps.rl("fishing_completed"));
-
-        public static final StreamCodec<ByteBuf, FishingCompletedPayload> STREAM_CODEC = StreamCodec.composite(
-                ByteBufCodecs.INT,
-                FishingCompletedPayload::time,
-                FishingCompletedPayload::new
-        );
-
-        @Override
-        public CustomPacketPayload.Type<? extends CustomPacketPayload> type() {
-            return TYPE;
-        }
-    }
-
 
     public record EntryUnlockedPayload(String menuName, String entryName) implements CustomPacketPayload
     {
@@ -65,23 +22,6 @@ public class Payloads
                 ByteBufCodecs.STRING_UTF8,
                 EntryUnlockedPayload::entryName,
                 EntryUnlockedPayload::new
-        );
-
-        @Override
-        public CustomPacketPayload.Type<? extends CustomPacketPayload> type() {
-            return TYPE;
-        }
-    }
-
-    public record FishCaughtPayload(ItemStack is) implements CustomPacketPayload
-    {
-
-        public static final CustomPacketPayload.Type<FishCaughtPayload> TYPE = new CustomPacketPayload.Type<>(Laicaps.rl("fish_caught"));
-
-        public static final StreamCodec<ByteBuf, FishCaughtPayload> STREAM_CODEC = StreamCodec.composite(
-                ByteBufCodecs.fromCodec(ItemStack.CODEC),
-                FishCaughtPayload::is,
-                FishCaughtPayload::new
         );
 
         @Override

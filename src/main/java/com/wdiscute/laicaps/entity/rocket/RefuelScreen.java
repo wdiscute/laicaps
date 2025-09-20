@@ -2,7 +2,6 @@ package com.wdiscute.laicaps.entity.rocket;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.wdiscute.laicaps.Laicaps;
-import com.wdiscute.laicaps.fishing.FishingRodMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;

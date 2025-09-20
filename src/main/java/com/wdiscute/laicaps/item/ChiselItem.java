@@ -1,6 +1,5 @@
 package com.wdiscute.laicaps.item;
 
-import com.wdiscute.laicaps.LaicapsKeys;
 import com.wdiscute.laicaps.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;

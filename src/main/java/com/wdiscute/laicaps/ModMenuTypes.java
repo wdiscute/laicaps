@@ -3,7 +3,6 @@ package com.wdiscute.laicaps;
 import com.wdiscute.laicaps.block.astronomytable.NotebookMenu;
 import com.wdiscute.laicaps.block.telescope.TelescopeMenu;
 import com.wdiscute.laicaps.entity.rocket.RefuelMenu;
-import com.wdiscute.laicaps.fishing.FishingRodMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -25,9 +24,6 @@ public class ModMenuTypes
 
     public static final DeferredHolder<MenuType<?>, MenuType<NotebookMenu>> NOTEBOOK_MENU =
             registerMenuType("notebook_menu", NotebookMenu::new);
-
-    public static final Supplier<MenuType<FishingRodMenu>> FISHING_ROD_MENU =
-            registerMenuType("fishing_rod_menu", FishingRodMenu::new);
 
     public static final Supplier<MenuType<RefuelMenu>> REFUEL_MENU =
             registerMenuType("refuel_menu", RefuelMenu::new);

@@ -2,31 +2,15 @@ package com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp
 
 import com.wdiscute.laicaps.Laicaps;
 import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.entity.fishing.FishingBobEntity;
 import com.wdiscute.laicaps.entity.rocket.RE;
-import com.wdiscute.laicaps.fishing.FishingMinigameScreen;
-import com.wdiscute.laicaps.item.ModDataComponents;
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PayloadReceiver
@@ -35,18 +19,6 @@ public class PayloadReceiver
     public static void receiveEntryUnlocked(final Payloads.EntryUnlockedPayload data, final IPayloadContext context)
     {
         Laicaps.entryUnlockedToast(data.menuName(), data.entryName());
-    }
-
-
-    @OnlyIn(Dist.CLIENT)
-    public static void client(Payloads.FishingPayload data, IPayloadContext context)
-    {
-        Minecraft.getInstance().setScreen(new FishingMinigameScreen(
-                data.stack(),
-                data.bobber(),
-                data.bait(),
-                data.difficulty()
-        ));
     }
 
     public static void receiveChangePlanetSelected(final Payloads.ChangePlanetSelected data, final IPayloadContext context)

@@ -1,6 +1,6 @@
-package com.wdiscute.laicaps;
+package com.wdiscute.laicaps.util;
 
-import com.wdiscute.laicaps.fishing.FishProperties;
+import com.wdiscute.laicaps.Laicaps;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -12,10 +12,6 @@ import static com.wdiscute.laicaps.Laicaps.*;
 
 public class LaicapsKeys
 {
-    public static final ResourceKey<Registry<FishProperties>> FISH_REGISTRY = ResourceKey.createRegistryKey(Laicaps.rl("fish"));
-
-
-
     public static final ResourceKey<Level> EMBER                = dim(rl("ember"));
     public static final ResourceKey<Level> ASHA                 = dim(rl("asha"));
     public static final ResourceKey<Level> OVERWORLD            = dim(ResourceLocation.withDefaultNamespace("overworld"));

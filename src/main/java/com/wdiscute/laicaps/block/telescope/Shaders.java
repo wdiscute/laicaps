@@ -12,7 +12,7 @@ import net.neoforged.neoforge.client.event.RegisterShadersEvent;
 
 import java.io.IOException;
 
-@EventBusSubscriber(modid = Laicaps.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = Laicaps.MOD_ID, value = Dist.CLIENT)
 public class Shaders {
 
     public static ShaderInstance REVEAL_SHADER = null;
