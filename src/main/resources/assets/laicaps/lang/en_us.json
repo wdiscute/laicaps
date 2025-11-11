@@ -1,4 +1,20 @@
 {
+  "dimension.laicaps.ember" : "Ember",
+
+  "biome.laicaps.asha_ocean" : "Asha Ocean",
+  "biome.laicaps.asha_forest" : "Asha Forest",
+  "biome.laicaps.asha_flower_forest" : "Asha Flower Forest",
+  "biome.laicaps.asha_plains" : "Asha Plains",
+  "biome.laicaps.asha_river" : "Asha River",
+  "biome.laicaps.asha_mountains" : "Asha Mountains",
+  "biome.laicaps.asha_mesa" : "Asha Mesa",
+  "biome.laicaps.asha_jungle" : "Asha Jungle",
+
+  "dimension.laicaps.asha" : "Asha",
+
+  "dimension.laicaps.lunamar" : "Lunamar",
+
+
   "tag.item.laicaps.oakheart_logs" : "Oakheart Logs",
   "tag.item.laicaps.oakroot_logs" : "Oakheart Logs",
 

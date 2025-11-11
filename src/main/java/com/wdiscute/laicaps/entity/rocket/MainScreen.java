@@ -416,7 +416,7 @@ public class MainScreen extends Screen
         {
             if (I18n.exists("gui.laicaps.main_screen.tooltip." + planet + "." + i))
             {
-                list.add(Tooltips.DecodeTranslationKeyTags("gui.laicaps.main_screen.tooltip." + planet + "." + i));
+                list.add(Tooltips.decodeTranslationKey("gui.laicaps.main_screen.tooltip." + planet + "." + i));
             } else
             {
                 if (i == 0)

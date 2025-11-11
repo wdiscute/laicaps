@@ -639,7 +639,7 @@ public class TelescopeScreen extends AbstractContainerScreen<TelescopeMenu>
         {
             if (I18n.exists("gui.laicaps.telescope.tooltip." + input + "." + i))
             {
-                list.add(Tooltips.DecodeTranslationKeyTags("gui.laicaps.telescope.tooltip." + input + "." + i));
+                list.add(Tooltips.decodeTranslationKey("gui.laicaps.telescope.tooltip." + input + "." + i));
             } else
             {
                 if (i == 0)

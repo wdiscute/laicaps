@@ -3,19 +3,38 @@ package com.wdiscute.laicaps.entity.bluetale;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import com.wdiscute.laicaps.Laicaps;
+import com.wdiscute.laicaps.ModItems;
 import com.wdiscute.laicaps.entity.glimpuff.GlimpuffEntity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.resources.model.ModelManager;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
+import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.MapItem;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
+import net.minecraft.world.phys.Vec3;
+import net.neoforged.neoforge.client.event.RenderItemInFrameEvent;
+import net.neoforged.neoforge.common.NeoForge;
 
 public class BluetaleRenderer extends MobRenderer<BluetaleEntity, BluetaleModel<BluetaleEntity>>
 {
 
+    ItemRenderer itemRenderer;
+
     public BluetaleRenderer(EntityRendererProvider.Context context)
     {
         super(context, new BluetaleModel<>(context.bakeLayer(BluetaleModel.LAYER_LOCATION)), 0.25f);
+        itemRenderer = context.getItemRenderer();
     }
 
     @Override
@@ -40,9 +59,9 @@ public class BluetaleRenderer extends MobRenderer<BluetaleEntity, BluetaleModel<
     }
 
     @Override
-    public void render(BluetaleEntity entity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight)
+    public void render(BluetaleEntity bluetaleEntity, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight)
     {
-        if(entity.isBaby())
+        if(bluetaleEntity.isBaby())
         {
             poseStack.scale(0.45f, 0.45f, 0.45f);
         }else
@@ -50,6 +69,26 @@ public class BluetaleRenderer extends MobRenderer<BluetaleEntity, BluetaleModel<
             poseStack.scale(1f,1f,1f);
         }
 
-        super.render(entity, entityYaw, partialTicks, poseStack, buffer, packedLight);
+        poseStack.pushPose();
+
+        poseStack.mulPose(Axis.XP.rotationDegrees(bluetaleEntity.getXRot()));
+        poseStack.mulPose(Axis.YP.rotationDegrees(90 - bluetaleEntity.getYRot()));
+
+        poseStack.mulPose(Axis.ZP.rotationDegrees(45));
+
+        if (!bluetaleEntity.isInWater()) {
+            poseStack.mulPose(Axis.XP.rotationDegrees(90));
+            poseStack.mulPose(Axis.YP.rotationDegrees(90));
+        }
+
+        ItemStack itemstack = new ItemStack(ModItems.AZURE_TUNA.get());
+
+        this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, packedLight,
+                OverlayTexture.NO_OVERLAY, poseStack, buffer, bluetaleEntity.level(), bluetaleEntity.getId());
+
+        poseStack.popPose();
+
+
+        super.render(bluetaleEntity, entityYaw, partialTicks, poseStack, buffer, packedLight);
     }
 }

@@ -3,12 +3,9 @@ package com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp
 import com.wdiscute.laicaps.Laicaps;
 import com.wdiscute.laicaps.ModItems;
 import com.wdiscute.laicaps.entity.rocket.RE;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 import java.util.List;

@@ -452,7 +452,7 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
             if (level().dimension().equals(LaicapsKeys.OVERWORLD))
                 planet = Component.translatable("gui.laicaps.landing.landing.overworld");
             if (level().dimension().equals(LaicapsKeys.LUNAMAR))
-                planet = Tooltips.DecodeTranslationKeyTags("gui.laicaps.landing.landing.lunamar");
+                planet = Tooltips.decodeTranslationKey("gui.laicaps.landing.landing.lunamar");
 
             comp = Component.translatable("gui.laicaps.landing.landing.base").append(planet);
         }

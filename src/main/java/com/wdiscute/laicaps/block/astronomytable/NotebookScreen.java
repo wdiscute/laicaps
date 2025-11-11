@@ -375,7 +375,7 @@ public class NotebookScreen extends AbstractContainerScreen<NotebookMenu>
 
                 String k = "gui.notebook." + currentPlanetString + ".entry" + currentEntry + ".name";
 
-                guiGraphics.drawString(this.font, Tooltips.DecodeTranslationKeyTags(k),
+                guiGraphics.drawString(this.font, Tooltips.decodeTranslationKey(k),
                         uiX + 90, uiY + 230, 0, false);
             }
             else
@@ -387,7 +387,7 @@ public class NotebookScreen extends AbstractContainerScreen<NotebookMenu>
                 if (currentPlanet == 3) s = "gui.notebook.overworld.missing";
                 if (currentPlanet == 4) s = "gui.notebook.lunamar.missing";
 
-                guiGraphics.drawString(this.font, Tooltips.DecodeTranslationKeyTags(s), uiX + 100, uiY + 230, 0, false);
+                guiGraphics.drawString(this.font, Tooltips.decodeTranslationKey(s), uiX + 100, uiY + 230, 0, false);
             }
 
 
@@ -438,7 +438,7 @@ public class NotebookScreen extends AbstractContainerScreen<NotebookMenu>
             {
                 String key = "gui.notebook." + currentPlanetString + ".entry" + currentEntry + ".left." + i;
                 if (I18n.exists(key))
-                    guiGraphics.drawString(this.font, Tooltips.DecodeTranslationKeyTags(key), uiX + 65, uiY + 10 + (i * 10), 0, false);
+                    guiGraphics.drawString(this.font, Tooltips.decodeTranslationKey(key), uiX + 65, uiY + 10 + (i * 10), 0, false);
             }
 
             //render text right
@@ -446,7 +446,7 @@ public class NotebookScreen extends AbstractContainerScreen<NotebookMenu>
             {
                 String key = "gui.notebook." + currentPlanetString + ".entry" + currentEntry + ".right." + i;
                 if (I18n.exists(key))
-                    guiGraphics.drawString(this.font, Tooltips.DecodeTranslationKeyTags(key), uiX + 272, uiY + 10 + (i * 10), 0, false);
+                    guiGraphics.drawString(this.font, Tooltips.decodeTranslationKey(key), uiX + 272, uiY + 10 + (i * 10), 0, false);
             }
         }
 
