@@ -1,0 +1,1135 @@
+{
+  "dimension.laicaps.ember": "Ember",
+
+  "biome.laicaps.asha_ocean": "Oceano de Asha",
+  "biome.laicaps.asha_forest": "Floresta de Asha",
+  "biome.laicaps.asha_flower_forest": "Floresta de Flores de Asha",
+  "biome.laicaps.asha_plains": "Planícies de Asha",
+  "biome.laicaps.asha_river": "Rio de Asha",
+  "biome.laicaps.asha_mountains": "Montanhas de Asha",
+  "biome.laicaps.asha_mesa": "Mesa de Asha",
+  "biome.laicaps.asha_jungle": "Selva de Asha",
+
+  "dimension.laicaps.asha": "Asha",
+
+  "dimension.laicaps.lunamar": "Lunamar",
+
+
+  "tag.item.laicaps.oakheart_logs": "Troncos de Carvalho Coração",
+  "tag.item.laicaps.oakroot_logs": "Troncos de Carvalho Coração",
+
+  "tag.item.laicaps.sweetlilies": "Lírios Doce",
+
+  "tag.item.laicaps.globes": "Globos",
+  "tag.block.laicaps.globes": "Globos",
+
+  "tag.item.laicaps.blueprints": "Plantas",
+  "tag.item.laicaps.completed_blueprints": "Plantas Completas",
+
+
+
+
+  "creativetab.laicaps.laicaps": "Laicaps",
+  "creativetab.laicaps.laicaps_asha": "Laicaps - Asha",
+  "creativetab.laicaps.laicaps_lunamar": "Laicaps - Lunamar",
+  "creativetab.laicaps.laicaps_ember": "Laicaps - Ember",
+  "creativetab.laicaps.laicaps_puzzles": "Laicaps - Blocos de Enigma",
+
+
+
+  "tooltip.laicaps.generic.treasure_chest_looted": "§cVocê já reivindicou o espólio.",
+  "tooltip.laicaps.generic.treasure_chest_busy": "§cUm jogador já está obtendo o espólio.",
+  "tooltip.laicaps.generic.players_reset": "§cOs jogadores disponíveis para saquear foram redefinidos.",
+
+
+  "gui.laicaps.landing.landing.base": "Pousando em ",
+
+  "gui.laicaps.landing.landing.ember": "<gradient-00>Ember</gradient-07>",
+  "gui.laicaps.landing.landing.asha": "§dAsha",
+  "gui.laicaps.landing.landing.overworld": "§2Mundo Superior",
+  "gui.laicaps.landing.landing.lunamar": "<gradient-54>Lunamar</gradient-66>",
+
+
+  "gui.laicaps.landing.temperature.base": "Temperatura: ",
+
+  "gui.laicaps.landing.atmosphere.base": "Atmosfera: ",
+  "gui.laicaps.landing.atmosphere.breathable": "§2Respirável",
+  "gui.laicaps.landing.atmosphere.unbreathable": "§cIrrespirável",
+
+
+  "gui.laicaps.landing.weather.base": "Clima: ",
+  "gui.laicaps.landing.weather.clear": "Limpo",
+  "gui.laicaps.landing.weather.light_rain": "Chuva Leve",
+  "gui.laicaps.landing.weather.moderate_rain": "Chuvoso",
+  "gui.laicaps.landing.weather.strong_rain": "Chuva Forte",
+  "gui.laicaps.landing.weather.light_thunder": "Tempestade Leve",
+  "gui.laicaps.landing.weather.moderate_thunder": "Tempestuoso",
+  "gui.laicaps.landing.weather.strong_thunder": "Tempestade Forte",
+
+  "item.laicaps.oakheart_berries_bait": "Isca de Frutas de Carvalho Coração",
+
+
+
+  "item.laicaps.chisel": "Cinzel",
+  "tooltip.laicaps.chisel.0": "Na verdade, não cinzela nada.",
+  "tooltip.laicaps.chisel.1": "Item de desenvolvedor para configurar enigmas e estruturas.",
+
+
+  "block.laicaps.treasure_chest": "Baú do Tesouro",
+  "tooltip.laicaps.treasure_chest.0": "Este baú do tesouro parece",
+  "tooltip.laicaps.treasure_chest.1": "ter sido deslocado de sua origem.",
+  "tooltip.laicaps.treasure_chest.2": "Não serve para nada além de decoração agora.",
+
+
+  "block.laicaps.sender_puzzle_block": "Bloco de Enigma Emissor",
+  "block.laicaps.receiver_block": "Bloco de Enigma Receptor",
+  "tooltip.laicaps.receiver_block.0": "este bloco recebe!",
+
+  "block.laicaps.symbol_puzzle_block": "Bloco de Enigma de Símbolos",
+  "block.laicaps.symbol_puzzle_block_inactive": "Bloco de Enigma de Símbolos Inativo",
+  "block.laicaps.symbol_controller_block": "Controlador de Enigma de Símbolos",
+
+  "block.laicaps.notes_puzzle_block": "Bloco de Enigma de Notas",
+  "block.laicaps.notes_controller_block": "Controlador de Enigma de Notas",
+
+  "block.laicaps.chase_controller_block": "Controlador de Enigma de Perseguição",
+
+  "block.laicaps.hidden_controller_block": "Controlador de Enigma Oculto",
+
+  "block.laicaps.combat_controller_block": "Controlador de Enigma de Combate",
+
+  "block.laicaps.rotating_controller_block": "Controlador de Enigma Rotativo",
+  "block.laicaps.rotating_puzzle_block": "Bloco de Enigma Rotativo",
+
+
+
+  "item.laicaps.spaceship_blueprint": "Planta de Espaçonave",
+  "tooltip.laicaps.spaceship_blueprint.0": "Uma planta perfeitamente projetada",
+  "tooltip.laicaps.spaceship_blueprint.1": "de uma espaçonave que, espera-se, funcione.",
+  "tooltip.laicaps.spaceship_blueprint.3": "",
+  "tooltip.laicaps.spaceship_blueprint.4": "EM ANDAMENTO",
+  "tooltip.laicaps.spaceship_blueprint.5": "Você pode colocar isso no chão para invocar a espaçonave",
+  "item.laicaps.spaceship_blueprint_sketch": "Esboço de Planta de Espaçonave",
+  "tooltip.laicaps.spaceship_blueprint_sketch.0": "Um esboço rascunhado de uma espaçonave.",
+  "tooltip.laicaps.spaceship_blueprint_sketch.1": "[use] para finalizá-lo em uma planta completa.",
+
+  "item.laicaps.telescope_lenses": "Lentes de Telescópio",
+
+  "item.laicaps.telescope_upgrade_kit": "Kit de Melhoria de Telescópio",
+  "tooltip.laicaps.telescope_upgrade_kit.0": "Um Kit de Melhoria básico para ser usado em um",
+  "tooltip.laicaps.telescope_upgrade_kit.1": "telescópio para melhorar o tamanho de sua abertura,",
+  "tooltip.laicaps.telescope_upgrade_kit.2": "permitindo que você veja mais longe no espaço.",
+  "tooltip.laicaps.telescope_upgrade_kit.3": "Quem sabe o que mais está escondido na",
+  "tooltip.laicaps.telescope_upgrade_kit.4": "escuridão dos céus acima?",
+
+  "block.laicaps.telescope": "Telescópio",
+  "block.laicaps.advanced_telescope": "Telescópio Avançado",
+  "block.laicaps.telescope_stand": "Suporte de Telescópio",
+  "block.laicaps.telescope.place": "§cO telescópio deve ser colocado em um suporte",
+  "block.laicaps.telescope.daytime": "§cEstá muito claro para ver qualquer coisa através do telescópio",
+
+
+  "gui.laicaps.telescope.tooltip.generic.travel": "§a§l>§r§a Viagem de Foguete Disponível",
+  "gui.laicaps.telescope.tooltip.generic.research": "§c§l>§r §cHá mais para pesquisar aqui",
+  "gui.laicaps.telescope.tooltip.generic.stargaze": "§c§l>>>§r §cClique para Observar Estrelas §c§l<<<§r",
+  "gui.laicaps.telescope.tooltip.generic.advanced.0": "§cSeu telescópio não é avançado o",
+  "gui.laicaps.telescope.tooltip.generic.advanced.1": "§csuficiente para olhar tão longe no espaço",
+
+  "gui.laicaps.telescope.tooltip.ember.0": "<gradient-00>Ember</gradient-07>",
+  "gui.laicaps.telescope.tooltip.ember.1": "",
+  "gui.laicaps.telescope.tooltip.ember.2": "Um planeta consumido por fogo e cinzas.",
+  "gui.laicaps.telescope.tooltip.ember.3": "",
+  "gui.laicaps.telescope.tooltip.ember.4": "Verifique seu caderno para mais informações.",
+  "gui.laicaps.telescope.tooltip.ember.5": "",
+
+  "gui.laicaps.telescope.tooltip.ember_blur.0": "§6§kEMBER",
+  "gui.laicaps.telescope.tooltip.ember_blur.1": "",
+
+
+  "gui.laicaps.telescope.tooltip.asha.0": "<gradient-78>Asha</gradient-87>",
+  "gui.laicaps.telescope.tooltip.asha.1": "",
+  "gui.laicaps.telescope.tooltip.asha.2": "Um planeta semelhante ao mundo superior, acolhedor à sua visita.",
+  "gui.laicaps.telescope.tooltip.asha.3": "",
+  "gui.laicaps.telescope.tooltip.asha.4": "Verifique seu caderno para mais informações.",
+  "gui.laicaps.telescope.tooltip.asha.5": "",
+
+  "gui.laicaps.telescope.tooltip.asha_blur.0": "§d§kASHA",
+  "gui.laicaps.telescope.tooltip.asha_blur.1": "",
+
+
+
+  "gui.laicaps.telescope.tooltip.overworld.0": "§2Mundo Superior",
+  "gui.laicaps.telescope.tooltip.overworld.1": "",
+  "gui.laicaps.telescope.tooltip.overworld.2": "Lar doce lar.",
+  "gui.laicaps.telescope.tooltip.overworld.3": "",
+  "gui.laicaps.telescope.tooltip.overworld.4": "Verifique seu caderno para mais informações.",
+  "gui.laicaps.telescope.tooltip.overworld.5": "",
+
+
+
+  "gui.laicaps.telescope.tooltip.lunamar.0": "<gradient-54>Lunamar</gradient-66>",
+  "gui.laicaps.telescope.tooltip.lunamar.1": "",
+  "gui.laicaps.telescope.tooltip.lunamar.2": "Um planeta oceânico cheio de vida.",
+  "gui.laicaps.telescope.tooltip.lunamar.3": "",
+  "gui.laicaps.telescope.tooltip.lunamar.4": "Verifique seu caderno para mais informações.",
+  "gui.laicaps.telescope.tooltip.lunamar.5": "",
+
+  "gui.laicaps.telescope.tooltip.lunamar_blur.0": "§9§kLUNAMAR",
+  "gui.laicaps.telescope.tooltip.lunamar_blur.1": "",
+
+
+
+
+  "gui.laicaps.main_screen.tooltip.generic.chart": "§a§l>>>§r §aClique para Mapear §a§l<<<§r",
+
+  "gui.laicaps.spaceship.unsafe": "Não é seguro desmontar agora",
+
+  "gui.laicaps.main_screen.missing_fuel":      "§c     Combustível Insuficiente",
+  "gui.laicaps.main_screen.missing_knowledge": "§c   Planeta não descoberto",
+  "gui.laicaps.main_screen.missing_nothing":   "§a     Pronto para Decolar",
+
+  "gui.laicaps.main_screen.missing_something": "§cO foguete não está pronto para decolar",
+
+  "gui.laicaps.main_screen.takeoff": "§2Iniciando decolagem...",
+
+  "gui.laicaps.main_screen.tooltip.ember.0": "<gradient-00>Ember</gradient-07>",
+  "gui.laicaps.main_screen.tooltip.ember_blur.0": "§6§kEMBER",
+
+  "gui.laicaps.main_screen.tooltip.asha.0": "<gradient-78>Asha</gradient-87>",
+  "gui.laicaps.main_screen.tooltip.asha_blur.0": "§d§kASHA",
+
+  "gui.laicaps.main_screen.tooltip.overworld.0": "§2Mundo Superior",
+
+  "gui.laicaps.main_screen.tooltip.lunamar.0": "<gradient-54>Lunamar</gradient-66>",
+  "gui.laicaps.main_screen.tooltip.lunamar_blur.0": "§9§kLUNAMAR",
+
+
+  "item.laicaps.astronomy_notebook": "Caderno de Astronomia",
+  "item.laicaps.astronomy_notebook.use": "§c[use] para abrir!",
+  "tooltip.laicaps.astronomy_notebook.0": "Um Caderno confiável onde você anota",
+  "tooltip.laicaps.astronomy_notebook.1": "todas as suas descobertas e pensamentos sobre",
+  "tooltip.laicaps.astronomy_notebook.2": "as estrelas acima e a terra abaixo.",
+
+
+  "block.laicaps.asha_teleporter": "Teletransportador de Asha",
+  "tooltip.laicaps.asha_teleporter.0": "Teletransportador rápido e improvisado do modo criativo",
+  "block.laicaps.lunamar_teleporter": "Teletransportador de Lunamar",
+  "tooltip.laicaps.lunamar_teleporter.0": "Teletransportador rápido e improvisado do modo criativo",
+  "block.laicaps.ember_teleporter": "Teletransportador de Ember",
+  "tooltip.laicaps.ember_teleporter.0": "Teletransportador rápido e improvisado do modo criativo",
+
+  "item.laicaps.basic_microchip": "Microchip Básico",
+  "tooltip.laicaps.basic_microchip.0": "Um pequeno microchip básico encontrado em <gradient-78>Asha</gradient-87>",
+  "tooltip.laicaps.basic_microchip.1": "deixado para trás pelo que quer que tenha habitado o local.",
+  "item.laicaps.refined_microchip": "Microchip Refinado",
+  "tooltip.laicaps.refined_microchip.0": "Um microchip refinado encontrado em <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.refined_microchip.1": "Você não tem certeza do porquê ou como ele chegou lá.",
+  "item.laicaps.advanced_microchip": "Microchip Avançado",
+  "tooltip.laicaps.advanced_microchip.0": "Um microchip avançado encontrado em <gradient-00>Ember</gradient-07>.",
+  "tooltip.laicaps.advanced_microchip.1": "É quente ao toque... está processando algo",
+  "tooltip.laicaps.advanced_microchip.2": "ou apenas calor residual de <gradient-00>Ember</gradient-07>?",
+  "item.laicaps.elite_microchip": "Microchip de Elite",
+  "tooltip.laicaps.elite_microchip.0": "EM ANDAMENTO",
+
+
+  "item.laicaps.enderblaze_fuel": "Combustível de Enderblaze",
+  "tooltip.laicaps.enderblaze_fuel.0": "Um combustível forte feito pela combinação",
+  "tooltip.laicaps.enderblaze_fuel.1": "de carvão com pó de pérola do ender pristina.",
+  "tooltip.laicaps.enderblaze_fuel.2": "Pode ser usado como combustível de foguete.",
+
+
+  "item.laicaps.pristine_enderpearl_dust": "Pó de Pérola do Ender Pristina",
+  "tooltip.laicaps.pristine_enderpearl_dust.0": "Pó cuidadosamente escovado de uma pérola do ender.",
+  "tooltip.laicaps.pristine_enderpearl_dust.1": "É incrivelmente brilhante e irradia energia.",
+
+
+  "block.laicaps.oakheart_sapling": "Muda de Carvalho Coração",
+  "block.laicaps.stripped_oakheart_log": "Tronco de Carvalho Coração Descascado",
+  "block.laicaps.oakheart_log": "Tronco de Carvalho Coração",
+  "block.laicaps.stripped_oakheart_wood": "Madeira de Carvalho Coração Descascada",
+  "block.laicaps.oakheart_wood": "Madeira de Carvalho Coração",
+  "block.laicaps.oakheart_leaves": "Folhas de Carvalho Coração",
+  "block.laicaps.flowering_oakheart_leaves": "Folhas de Carvalho Coração Floridas",
+  "block.laicaps.oakheart_planks": "Tábuas de Carvalho Coração",
+  "block.laicaps.oakheart_slab": "Laje de Carvalho Coração",
+  "block.laicaps.oakheart_stairs": "Escadas de Carvalho Coração",
+  "block.laicaps.oakheart_button": "Botão de Carvalho Coração",
+  "block.laicaps.oakheart_trapdoor": "Alçapão de Carvalho Coração",
+  "block.laicaps.oakheart_door": "Porta de Carvalho Coração",
+  "block.laicaps.oakheart_fence": "Cerca de Carvalho Coração",
+  "block.laicaps.oakheart_fence_gate": "Portão de Carvalho Coração",
+  "block.laicaps.oakheart_pressure_plate": "Placa de Pressão de Carvalho Coração",
+  "block.laicaps.oakheart_sign": "Placa de Carvalho Coração",
+  "block.laicaps.oakheart_hanging_sign": "Placa Suspensa de Carvalho Coração",
+  "item.laicaps.oakheart_boat": "Bote de Carvalho Coração",
+  "item.laicaps.oakheart_chest_boat": "Bote de Carvalho Coração com Baú",
+  "item.laicaps.oakheart_berries": "Frutas de Carvalho Coração",
+  "tooltip.laicaps.oakheart_berries.0": "Doces e refrescantes!",
+
+
+  "block.laicaps.oakroot_sapling": "Muda de Raiz de Carvalho",
+  "block.laicaps.stripped_oakroot_log": "Tronco de Raiz de Carvalho Descascado",
+  "block.laicaps.oakroot_log": "Tronco de Raiz de Carvalho",
+  "block.laicaps.stripped_oakroot_wood": "Madeira de Raiz de Carvalho Descascada",
+  "block.laicaps.oakroot_wood": "Madeira de Raiz de Carvalho",
+  "block.laicaps.oakroot_leaves": "Folhas de Raiz de Carvalho",
+  "block.laicaps.flowering_oakroot_leaves": "Folhas de Raiz de Carvalho Floridas",
+  "block.laicaps.oakroot_planks": "Tábuas de Raiz de Carvalho",
+  "block.laicaps.oakroot_slab": "Laje de Raiz de Carvalho",
+  "block.laicaps.oakroot_stairs": "Escadas de Raiz de Carvalho",
+  "block.laicaps.oakroot_button": "Botão de Raiz de Carvalho",
+  "block.laicaps.oakroot_trapdoor": "Alçapão de Raiz de Carvalho",
+  "block.laicaps.oakroot_door": "Porta de Raiz de Carvalho",
+  "block.laicaps.oakroot_fence": "Cerca de Raiz de Carvalho",
+  "block.laicaps.oakroot_fence_gate": "Portão de Raiz de Carvalho",
+  "block.laicaps.oakroot_pressure_plate": "Placa de Pressão de Raiz de Carvalho",
+  "block.laicaps.oakroot_sign": "Placa de Raiz de Carvalho",
+  "block.laicaps.oakroot_hanging_sign": "Placa Suspensa de Raiz de Carvalho",
+  "item.laicaps.oakroot_boat": "Bote de Raiz de Carvalho",
+  "item.laicaps.oakroot_chest_boat": "Bote de Raiz de Carvalho com Baú",
+
+
+  "block.laicaps.violet_sweetlily": "Lírio Doce Violeta",
+  "block.laicaps.peach_sweetlily": "Lírio Doce Pêssego",
+  "block.laicaps.navy_sweetlily": "Lírio Doce Marinho",
+  "block.laicaps.magenta_sweetlily": "Lírio Doce Magenta",
+  "block.laicaps.cherry_sweetlily": "Lírio Doce Cereja",
+
+  "block.laicaps.riverthorne_thistle": "Cardo de Espinho do Rio",
+  "block.laicaps.riverthorne": "Caule de Espinho do Rio",
+
+  "block.laicaps.lunarveil": "Véu Lunar",
+
+  "item.laicaps.starflies_jar": "Jarra de Vaga-lumes Estelares",
+  "tooltip.laicaps.starflies_jar.0": "Uma jarra cheia de Vaga-lumes Estelares brilhantes.",
+  "tooltip.laicaps.starflies_jar.1": "Nativos de <gradient-78>Asha</gradient-87>, essas gentis",
+  "tooltip.laicaps.starflies_jar.2": "criaturas vagam pela noite",
+  "tooltip.laicaps.starflies_jar.3": "iluminando a área ao redor",
+
+  "item.laicaps.jar": "Jarra",
+  "tooltip.laicaps.jar.0": "Apenas uma simples jarra de vidro.",
+  "tooltip.laicaps.jar.1": "Pode ser usada para fazer geleia ou",
+  "tooltip.laicaps.jar.2": "pegar Vaga-lumes Estelares durante a noite.",
+
+  "item.laicaps.oakheart_berries_jam": "Geleia de Frutas de Carvalho Coração",
+  "tooltip.laicaps.oakheart_berries_jam.0": "Uma deliciosa Jarra de frutas de Carvalho Coração.",
+  "tooltip.laicaps.oakheart_berries_jam.1": "Melhor comê-la antes que um Nimble",
+  "tooltip.laicaps.oakheart_berries_jam.2": "tente roubá-la!",
+
+  "block.laicaps.asha_grass_block": "Bloco de Grama de Asha",
+  "block.laicaps.asha_dirt": "Terra de Asha",
+  "block.laicaps.asha_grass": "Grama de Asha",
+  "block.laicaps.asha_short_grass": "Grama Curta de Asha",
+
+  "block.laicaps.illuma": "Illuma",
+
+  "block.laicaps.ember_globe": "Globo de Ember",
+  "tooltip.laicaps.ember_globe.0": "Um modelo surpreendentemente preciso de <gradient-00>Ember</gradient-07>,",
+  "tooltip.laicaps.ember_globe.1": "obtido muito raramente em baús em <gradient-00>Ember</gradient-07>",
+  "tooltip.laicaps.ember_globe.3": "EM ANDAMENTO NÃO OBTÍVEL ATUALMENTE",
+
+  "block.laicaps.asha_globe": "Globo de Asha",
+  "tooltip.laicaps.asha_globe.0": "Um modelo fascinantemente preciso de <gradient-78>Asha</gradient-87>,",
+  "tooltip.laicaps.asha_globe.1": "até cada rio e ravina.",
+  "tooltip.laicaps.asha_globe.2": "Obtido muito raramente em baús em <gradient-78>Asha</gradient-87>.",
+
+  "block.laicaps.overworld_globe": "Globo do Mundo Superior",
+  "tooltip.laicaps.overworld_globe.1": "EM ANDAMENTO NÃO OBTÍVEL ATUALMENTE",
+
+  "block.laicaps.lunamar_globe": "Globo de Lunamar",
+  "tooltip.laicaps.lunamar_globe.0": "Um modelo de <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.lunamar_globe.1": "Talvez preciso? É principalmente água.",
+  "tooltip.laicaps.lunamar_globe.2": "Obtido muito raramente em baús em <gradient-54>Lunamar</gradient-66>",
+
+
+  "entity.laicaps.bluetale": "Cauda Azul",
+  "item.laicaps.bluetale_spawn_egg": "Ovo de Geração de Cauda Azul",
+  "item.laicaps.bluetale_bucket": "Balde de Cauda Azul",
+
+  "item.laicaps.bluetale": "Cauda Azul",
+  "tooltip.laicaps.bluetale.0": "Um peixe cintilante encontrado em <gradient-78>Asha</gradient-87> com uma cauda azul brilhante.",
+  "tooltip.laicaps.bluetale.1": "Elogiado por trazer boa sorte aos pescadores.",
+
+  "item.laicaps.cooked_bluetale": "Cauda Azul Cozido",
+  "tooltip.laicaps.cooked_bluetale.0": "Um Cauda Azul cozido à perfeição.",
+  "tooltip.laicaps.cooked_bluetale.1": "Uma pena que teve que acabar assim.",
+
+
+
+  "entity.laicaps.redtale": "Cauda Vermelha",
+  "item.laicaps.redtale_spawn_egg": "Ovo de Geração de Cauda Vermelha",
+  "item.laicaps.redtale_bucket": "Balde de Cauda Vermelha",
+
+  "item.laicaps.redtale": "Cauda Vermelha",
+  "tooltip.laicaps.redtale.0": "Um peixe cintilante encontrado em <gradient-78>Asha</gradient-87> com uma cauda vermelha brilhante.",
+  "tooltip.laicaps.redtale.1": "Desprezado por trazer má sorte aos pescadores.",
+
+  "item.laicaps.cooked_redtale": "Cauda Vermelha Cozido",
+  "tooltip.laicaps.cooked_redtale.0": "Um Cauda Vermelha cozido à perfeição.",
+  "tooltip.laicaps.cooked_redtale.1": "A única coisa para a qual ele serve.",
+
+
+
+  "item.laicaps.red_herring": "Arenque Vermelho",
+  "tooltip.laicaps.red_herring.0": "Um grande sinal de mais peixes por vir!",
+  "tooltip.laicaps.red_herring.1": "Ou talvez seja por isso que tem esse nome?",
+
+  "item.laicaps.avian": "Avian",
+  "tooltip.laicaps.avian.0": "Um tipo raro de peixe que é encontrado à noite.",
+
+  "item.laicaps.twilight_trout": "Truta do Crepúsculo",
+  "tooltip.laicaps.twilight_trout.0": "Uma truta rara que só emerge por volta da meia-noite.",
+
+  "item.laicaps.thundercharged_eel": "Enguia Carregada de Trovão",
+  "tooltip.laicaps.thundercharged_eel.0": "Esta Enguia foi atingida por um raio",
+  "tooltip.laicaps.thundercharged_eel.1": "e ficou eletrificada. Melhor não tocá-la.",
+
+  "item.laicaps.eel": "Enguia",
+  "tooltip.laicaps.eel.0": "Uma Enguia escorregadia.",
+
+  "item.laicaps.meadow_perch": "Perca do Prado",
+  "tooltip.laicaps.meadow_perch.0": "Uma perca bonita. Daria uma ótima",
+  "tooltip.laicaps.meadow_perch.1": "refeição se não fosse por suas escamas afiadas.",
+
+  "item.laicaps.solar_carp": "Carpa Solar",
+  "tooltip.laicaps.solar_carp.0": "Uma carpa mais comum de emergir durante o dia.",
+  "tooltip.laicaps.solar_carp.1": "Fácil de pegar, dá uma refeição",
+  "tooltip.laicaps.solar_carp.2": "decente quando preparada corretamente.",
+
+  "item.laicaps.very_tiny_shark": "Tubarão Muito Minúsculo",
+  "tooltip.laicaps.very_tiny_shark.0": "Um tubarão incrivelmente minúsculo! Embora pequeno, ainda feroz.",
+
+  "item.laicaps.azure_tuna": "Atum Azure",
+  "tooltip.laicaps.azure_tuna.0": "Um lindo Atum de tom azure.",
+  "tooltip.laicaps.azure_tuna.1": "Uma captura comum em alto mar.",
+
+  "item.laicaps.scarlet_tuna": "Atum Escarlate",
+  "tooltip.laicaps.scarlet_tuna.0": "Um lindo Atum de tom escarlate.",
+  "tooltip.laicaps.scarlet_tuna.1": "Uma captura comum em alto mar.",
+
+  "item.laicaps.sage_tuna": "Atum Sálvia",
+  "tooltip.laicaps.sage_tuna.0": "Um lindo Atum de tom sálvia.",
+  "tooltip.laicaps.sage_tuna.1": "Uma captura comum em alto mar.",
+
+  "item.laicaps.carpenjoe": "Carpenjoe",
+  "tooltip.laicaps.carpenjoe.0": "Uma carpa majestosa brilhando em conhecimento de modding.",
+  "tooltip.laicaps.carpenjoe.1": "Diz-se que pescadores a comem para dar sorte antes de depurar.",
+
+  "item.laicaps.stormsail_ray": "Raia Vela da Tempestade",
+  "tooltip.laicaps.stormsail_ray.0": "Uma raia rara que emerge apenas enquanto chove.",
+  "tooltip.laicaps.stormsail_ray.1": "Infelizmente, sua carne espessa não permite",
+  "tooltip.laicaps.stormsail_ray.2": "muito além de admirar.",
+
+  "item.laicaps.sunfang_eel": "Enguia Presa Solar",
+  "tooltip.laicaps.sunfang_eel.0": "Uma Enguia que odeia a chuva e se esconderá",
+  "tooltip.laicaps.sunfang_eel.1": "a qualquer sinal de precipitação.",
+
+  "item.laicaps.forest_bream": "Brema da Floresta",
+  "tooltip.laicaps.forest_bream.0": "Uma espécie de peixe frequentemente",
+  "tooltip.laicaps.forest_bream.1": "encontrada nos lagos de <gradient-78>Asha</gradient-87>",
+
+  "item.laicaps.solar_koi": "Koi Solar",
+  "tooltip.laicaps.solar_koi.0": "Um peixe incrivelmente bonito frequentemente",
+  "tooltip.laicaps.solar_koi.1": "encontrado nas águas tranquilas de <gradient-78>Asha</gradient-87>",
+
+  "item.laicaps.jewel_koi": "Koi Joia",
+  "tooltip.laicaps.jewel_koi.0": "Um peixe incrivelmente bonito frequentemente",
+  "tooltip.laicaps.jewel_koi.1": "encontrado nas águas tranquilas de <gradient-78>Asha</gradient-87>",
+
+  "item.laicaps.lake_snapper": "Pargo do Lago",
+  "tooltip.laicaps.lake_snapper.0": "Um peixe frequentemente usado com o único propósito de dizer:",
+  "tooltip.laicaps.lake_snapper.1": "Pargo? Eu mal a conheço!",
+
+
+
+
+
+  "item.laicaps.crimson_starfish": "Estrela do Mar Carmesim",
+  "tooltip.laicaps.crimson_starfish.0": "Uma Estrela do Mar de cor vermelha.",
+  "tooltip.laicaps.crimson_starfish.1": "Não confundir com um peixe de 1 estrela.",
+
+  "item.laicaps.verdant_seahorse": "Cavalo-Marinho Verdejante",
+  "tooltip.laicaps.verdant_seahorse.0": "Um dos muitos cavalos-marinhos que habitam <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.verdant_seahorse.1": "Este tem barbatanas verdes, indicando sua idade.",
+
+  "item.laicaps.radiant_seahorse": "Cavalo-Marinho Radiante",
+  "tooltip.laicaps.radiant_seahorse.0": "Um dos muitos cavalos-marinhos que habitam <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.radiant_seahorse.1": "As barbatanas de cor azul indicam que ainda é jovem",
+  "tooltip.laicaps.radiant_seahorse.2": "e provavelmente bom no valorant.",
+
+  "item.laicaps.octo": "Octo",
+  "tooltip.laicaps.octo.0": "Um Octo, uma das espécies mais dominantes em <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.octo.1": "Eles geralmente não serão agressivos, a menos que provocados,",
+  "tooltip.laicaps.octo.2": "embora possam ser bastante territoriais.",
+
+  "item.laicaps.red_reef_octo": "Octo de Recife Vermelho",
+  "tooltip.laicaps.red_reef_octo.0": "Um Octo, uma das espécies mais dominantes em <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.red_reef_octo.1": "Este Octo decidiu transformar uma concha vermelha em seu covil.",
+
+  "item.laicaps.ghost_octo": "Octo Fantasma",
+  "tooltip.laicaps.ghost_octo.0": "Um Octo, uma das espécies mais dominantes em <gradient-54>Lunamar</gradient-66>.",
+
+  "item.laicaps.greater_octo": "Octo Maior",
+  "tooltip.laicaps.greater_octo.0": "Um Octo, uma das espécies mais dominantes em <gradient-54>Lunamar</gradient-66>.",
+
+  "item.laicaps.lesser_octo": "Octo Menor",
+  "tooltip.laicaps.lesser_octo.0": "Um Octo, uma das espécies mais dominantes em <gradient-54>Lunamar</gradient-66>.",
+
+  "item.laicaps.coral_octo": "Octo de Coral",
+  "tooltip.laicaps.coral_octo.0": "Um Octo, uma das espécies mais dominantes em <gradient-54>Lunamar</gradient-66>.",
+
+  "item.laicaps.lumen_drifter": "Viajante Lúmen",
+  "tooltip.laicaps.lumen_drifter.0": "Não confundir com uma Estrela do Mar, essas criaturas",
+  "tooltip.laicaps.lumen_drifter.1": "são muito menores e mais finas, e na verdade",
+  "tooltip.laicaps.lumen_drifter.2": "não são parentes das estrelas do mar.",
+
+  "item.laicaps.dhufish": "Peixe Dhu",
+  "tooltip.laicaps.dhufish.0": "Este feioso tenta andar com outros peixes",
+  "tooltip.laicaps.dhufish.1": "mas eles sempre fogem.",
+  "tooltip.laicaps.dhufish.2": "De alguma forma, muito eficaz em garantir comida",
+  "tooltip.laicaps.dhufish.3": "e abrigo longe de predadores naturais.",
+
+  "item.laicaps.emperor_angelfish": "Peixe Anjo Imperador",
+  "tooltip.laicaps.emperor_angelfish.0": "Um lindo <gradient-54>Peixe Anjo</gradient-62>, um dos últimos de sua espécie.",
+  "tooltip.laicaps.emperor_angelfish.1": "Agora <rgb>morto</rgb> em suas mãos.",
+
+  "item.laicaps.vesani": "Vesani",
+  "tooltip.laicaps.vesani.0": "Esta espécie de peixe é muito boa",
+  "tooltip.laicaps.vesani.1": "em se camuflar como outras espécies.",
+  "tooltip.laicaps.vesani.2": "É incomum vê-los em",
+  "tooltip.laicaps.vesani.3": "campo aberto com sua aparência normal.",
+
+  "item.laicaps.drowned_cod": "Bacalhau Afogado",
+  "tooltip.laicaps.drowned_cod.0": "Um bacalhau semelhante em cor ao afogado lá",
+  "tooltip.laicaps.drowned_cod.1": "no mundo superior. Provavelmente apenas uma coincidência.",
+
+  "item.laicaps.mad_ranga_danchovy": "Mad Ranga Danchovy",
+  "tooltip.laicaps.mad_ranga_danchovy.0": "Ao contrário do que seu nome pode sugerir, esta",
+  "tooltip.laicaps.mad_ranga_danchovy.1": "espécie de anchova é bastante amigável.",
+
+  "item.laicaps.kimbarao": "Kimbarão",
+  "tooltip.laicaps.kimbarao.0": "Uma espécie de tubarão tenebrosa conhecida por suas",
+  "tooltip.laicaps.kimbarao.1": "habilidades de ortografia horríveis (para um tubarão)",
+
+  "item.laicaps.circus": "Circo",
+  "tooltip.laicaps.circus.0": "Uma espécie parecida com o peixe-palhaço que anda em grupos",
+
+  "item.laicaps.ghost_fish": "Peixe Fantasma",
+  "tooltip.laicaps.ghost_fish.0": "Um peixe transparente frequentemente referido como um fantasma.",
+  "tooltip.laicaps.ghost_fish.1": "Diz-se que traz boa sorte se avistado após o jantar.",
+
+  "item.laicaps.lord_of_death_and_doom": "Senhor da Morte e Perdição",
+  "tooltip.laicaps.lord_of_death_and_doom.0": "Tamanho: 1",
+
+  "item.laicaps.ghoti": "Ghoti",
+  "tooltip.laicaps.ghoti.0": "Um peixe frequentemente mal pronunciado por causa de sua grafia.",
+  "tooltip.laicaps.ghoti.1": "Durante os dias mais frios de <gradient-54>Lunamar</gradient-66> você pode",
+  "tooltip.laicaps.ghoti.2": "ouvi-lo dizer 'Ei <gradient-54>Lunamar</gradient-66>, Ghoti aqui.'",
+
+
+  "item.laicaps.skyyfish": "Skyyfish",
+  "tooltip.laicaps.skyyfish.0": "Um peixe frequentemente encontrado nadando nos",
+  "tooltip.laicaps.skyyfish.1": "cubos flutuantes de <gradient-54>Lunamar</gradient-66>.",
+
+
+
+
+
+
+
+
+  "entity.laicaps.bubblemouth": "Boca de Bolha",
+  "item.laicaps.bubblemouth_spawn_egg": "Ovo de Geração de Boca de Bolha",
+  "item.laicaps.bubblemouth_bucket": "Balde de Boca de Bolha",
+
+  "item.laicaps.bubblemouth": "Boca de Bolha",
+  "tooltip.laicaps.bubblemouth.0": "Um peixe rechonchudo de nado lento de <gradient-54>Lunamar</gradient-66>.",
+  "tooltip.laicaps.bubblemouth.1": "Frequentemente visto vagando através de algas sombra da lua,",
+  "tooltip.laicaps.bubblemouth.2": "soprando pequenas bolhas sem motivo aparente.",
+
+  "item.laicaps.cooked_bubblemouth": "Boca de Bolha Cozido",
+  "tooltip.laicaps.cooked_bubblemouth.0": "Um Boca de Bolha defumado saboroso.",
+  "tooltip.laicaps.cooked_bubblemouth.1": "Combina perfeitamente com algumas frutas sombra da lua.",
+
+
+
+  "entity.laicaps.moonray": "Raia da Lua",
+  "item.laicaps.moonray_spawn_egg": "Ovo de Geração de Raia da Lua",
+  "item.laicaps.moonray_bucket": "Balde de Raia da Lua",
+
+  "item.laicaps.moonray": "Raia da Lua",
+  "tooltip.laicaps.moonray.0": "Uma raia de movimento lento que desliza suavemente ao longo das ondas.",
+  "tooltip.laicaps.moonray.1": "Agora morta.",
+
+
+
+  "entity.laicaps.glimpuff": "Glimpuff",
+  "item.laicaps.glimpuff_spawn_egg": "Ovo de Geração de Glimpuff",
+  "item.laicaps.glimpuff_bucket": "Balde de Glimpuff",
+
+  "item.laicaps.glimpuff": "Glimpuff",
+  "tooltip.laicaps.glimpuff.0": "Um peixe único que se alimenta de frutas sombra da lua.",
+  "tooltip.laicaps.glimpuff.1": "Seu sistema digestivo absorve as propriedades brilhantes",
+  "tooltip.laicaps.glimpuff.2": "da fruta, fazendo-o brilhar por um tempo depois de comer.",
+
+  "item.laicaps.cooked_glimpuff": "Glimpuff Cozido",
+  "tooltip.laicaps.cooked_glimpuff.0": "Um Glimpuff defumado saboroso.",
+  "tooltip.laicaps.cooked_glimpuff.1": "Combina perfeitamente com algumas frutas sombra da lua.",
+
+
+
+
+  "entity.laicaps.swibble": "Swibble",
+  "item.laicaps.swibble_spawn_egg": "Ovo de Geração de Swibble",
+
+
+
+  "entity.laicaps.nimble": "Nimble",
+  "item.laicaps.nimble_spawn_egg": "Ovo de Geração de Nimble",
+  "item.laicaps.nimble_sweet_treat": "Guloseima Doce de Nimble",
+
+  "entity.laicaps.snuffler": "Snuffler",
+  "item.laicaps.snuffler_spawn_egg": "Ovo de Geração de Snuffler",
+  "item.laicaps.snuffler_chop": "Costela de Snuffler",
+  "item.laicaps.snuffler_chop.0": "Um corte cru de carne de um Snuffler",
+  "item.laicaps.cooked_snuffler_chop": "Costela de Snuffler Cozida",
+  "item.laicaps.cooked_snuffler_chop.0": "Uma costela saborosa de um snuffler",
+
+  "item.laicaps.sweetlily_sugar": "Açúcar de Lírio Doce",
+
+
+  "block.laicaps.water_container": "Recipiente de Água",
+  "tooltip.laicaps.water_container.0": "Bloco de dev para conter água nos",
+  "tooltip.laicaps.water_container.1": "cubos de água flutuantes de <gradient-54>Lunamar</gradient-66>",
+
+  "block.laicaps.water_container_helper": "Ajudante de Recipiente de Água",
+  "tooltip.laicaps.water_container_helper.0": "Este bloco se deleta quando.",
+  "tooltip.laicaps.water_container_helper.1": "gerado naturalmente através de estruturas",
+
+
+
+  "block.laicaps.moonshade_kelp": "Alga Sombra da Lua",
+  "block.laicaps.moonshade_tall_seagrass": "Erva Marinha Sombra da Lua Alta",
+
+  "block.laicaps.moonshade_seagrass": "Erva Marinha Sombra da Lua",
+  "tooltip.laicaps.moonshade_seagrass.0": "Erva marinha semelhante à do mundo superior,",
+  "tooltip.laicaps.moonshade_seagrass.1": "mas devido à falta de luz solar, tem um tom mais azul.",
+
+  "item.laicaps.moonshade_fruit": "Fruta Sombra da Lua",
+  "tooltip.laicaps.moonshade_fruit.0": "Uma fruta estranha em formato de lua",
+  "tooltip.laicaps.moonshade_fruit.1": "brilhando com um tom roxo suave.",
+  "tooltip.laicaps.moonshade_fruit.2": "Ela pulsa suavemente, como se estivesse viva.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "advancements.laicaps.root.title": "Laicaps",
+  "advancements.laicaps.root.description": "O começo de uma Aventura muito espaciaL",
+
+
+  "advancements.laicaps.ember_discovered.title": "Uma Faísca no Céu Escuro",
+  "advancements.laicaps.ember_discovered.description": "Aviste os fogos ardentes de Ember através do seu telescópio",
+
+  "advancements.laicaps.land_on_ember.title": "Andarilho das Cinzas",
+  "advancements.laicaps.land_on_ember.description": "Pise onde o fogo domina a terra",
+
+  "advancements.laicaps.ember_entries.title": "Queimado na Memória",
+  "advancements.laicaps.ember_entries.description": "Preencha completamente seu conhecimento sobre Ember",
+
+
+  "advancements.laicaps.asha_discovered.title": "Um Planeta Diferente no Céu",
+  "advancements.laicaps.asha_discovered.description": "Olhe através do seu telescópio e encontre Asha escondida entre as estrelas",
+
+  "advancements.laicaps.land_on_asha.title": "Um pequeno passo para Steve",
+  "advancements.laicaps.land_on_asha.description": "Embarque em sua primeira viagem espaciaL e pouse em asha",
+
+  "advancements.laicaps.asha_entries.title": "Cada Ruína Limpa",
+  "advancements.laicaps.asha_entries.description": "Preencha completamente seu conhecimento sobre Asha",
+
+
+  "advancements.laicaps.overworld_entries.title": "Raízes do Entendimento",
+  "advancements.laicaps.overworld_entries.description": "Preencha completamente seu conhecimento sobre o Mundo Superior",
+
+
+  "advancements.laicaps.lunamar_discovered.title": "Oceanos Acima",
+  "advancements.laicaps.lunamar_discovered.description": "Aviste o planeta azul na vastidão do espaço",
+
+  "advancements.laicaps.land_on_lunamar.title": "Queda Lunar no Mar",
+  "advancements.laicaps.land_on_lunamar.description": "As marés sobem para saudar mais um visitante",
+
+  "advancements.laicaps.lunamar_entries.title": "Segredos Submersos",
+  "advancements.laicaps.lunamar_entries.description": "Preencha completamente seu conhecimento sobre Lunamar",
+
+
+  "advancements.laicaps.sweetlily.title": "Todos os Lírios",
+  "advancements.laicaps.sweetlily.description": "Encontre e Reúna todos os 5 Lírios Doce",
+
+  "advancements.laicaps.telescope.title": "Oh, As Estrelas Acima",
+  "advancements.laicaps.telescope.description": "Crie um telescópio e olhe para as estrelas",
+
+  "advancements.laicaps.telescope_advanced.title": "Um olhar mais profundo no espaço",
+  "advancements.laicaps.telescope_advanced.description": "Melhore um telescópio para olhar ainda mais longe no espaço",
+
+  "advancements.laicaps.basic_microchip.title": "Um Achado de Sorte",
+  "advancements.laicaps.basic_microchip.description": "Encontre um microchip básico deixado para trás em Asha",
+
+  "advancements.laicaps.refined_microchip.title": "Um Achado Ainda Mais Sortudo",
+  "advancements.laicaps.refined_microchip.description": "Encontre um microchip refinado que de alguma forma chegou a Lunamar",
+
+
+
+
+
+  "item.laicaps.entry.dusty": "Empoeirado,Perdido,Desbotado,Arruinado,Coberto de pó,Sem rótulo,Desgastado,Manchado,Abandonado,Antigo,Esquecido,Branqueado",
+  "item.laicaps.entry.research": "Pesquisa,Observação,Dados,Campo,Diário,Arquivo,Planetário,Expedição,Explorador,Levantamento,Análise,Estudo",
+  "item.laicaps.entry.paper": "Papel,Registro,Entrada,Notas,Relatório,Página,Folha,Memorando,Fragmento,Rascunho,Gráfico,Nota,Diário de Bordo,Documento,Planta,Script,Anotação",
+
+  "tooltip.laicaps.ember_entry.0": "Um pedaço de papel rasgado quente ao toque.",
+  "tooltip.laicaps.ember_entry.1": "Algumas notas sobre <gradient-00>Ember</gradient-07> foram",
+  "tooltip.laicaps.ember_entry.2": "anotadas às pressas.",
+
+  "tooltip.laicaps.asha_entry.0": "Uma nota antiga deixada por quem quer que",
+  "tooltip.laicaps.asha_entry.1": "tenha passado por <gradient-78>Asha</gradient-87> antes de você. Suas informações",
+  "tooltip.laicaps.asha_entry.2": "certamente serão úteis para você.",
+
+  "tooltip.laicaps.lunamar_entry.0": "Um pedaço de papel à prova d'água",
+  "tooltip.laicaps.lunamar_entry.1": "cuidadosamente escrito contendo algumas",
+  "tooltip.laicaps.lunamar_entry.2": "informações sobre <gradient-54>Lunamar</gradient-66>.",
+
+  "tooltip.laicaps.entry_page.unlock.before": "você ganhou mais conhecimento sobre ",
+  "tooltip.laicaps.entry_page.unlock.after": "",
+
+
+
+
+  "gui.notebook.menu.missing": "         §c§k!!!!!!!!!!!!!",
+  "gui.notebook.ember.missing": "      <gradient-00>Ember</gradient-07> - §k!!!!!!!!!",
+  "gui.notebook.asha.missing": "       <gradient-78>Asha</gradient-87> - §c§k!!!!!!!!!",
+  "gui.notebook.overworld.missing": "  <gradient-27>Mundo Superior</gradient-38> - §c§k!!!!!!!!!",
+  "gui.notebook.lunamar.missing": "    <gradient-54>Lunamar</gradient-66> - §c§k!!!!!!!!!",
+
+
+
+  "gui.notebook.menu.entry1.image": "menu_illustration_1",
+  "gui.notebook.menu.entry1.name": "      Introdução",
+  "gui.notebook.menu.entry1.toast": "Introdução",
+
+
+  "gui.notebook.menu.entry1.left.2": "Se eu quiser ter sucesso em minha",
+  "gui.notebook.menu.entry1.left.3": "viagem espacial, é melhor manter todas",
+  "gui.notebook.menu.entry1.left.4": "as minhas descobertas em um espaço centralizado.",
+
+  "gui.notebook.menu.entry1.left.7": "Este caderno servirá perfeitamente.",
+
+  "gui.notebook.menu.entry1.left.9": "Sempre que eu encontrar algo interessante",
+  "gui.notebook.menu.entry1.left.10": "Vou anotar para o meu eu futuro!",
+
+
+  "gui.notebook.menu.entry1.right.3": "Posso facilmente marcar páginas",
+  "gui.notebook.menu.entry1.right.4": "relevantes e voltar quando necessário!",
+  "gui.notebook.menu.entry1.right.5": "Tão prático!",
+
+
+
+  "gui.notebook.menu.entry1.right.16": "Usando estes marcadores na parte inferior",
+  "gui.notebook.menu.entry1.right.17": "eu posso percorrer rapidamente as",
+  "gui.notebook.menu.entry1.right.18": "páginas.",
+
+
+
+  "gui.notebook.menu.entry2.image": "menu_illustration_2",
+  "gui.notebook.menu.entry2.name": " Sobre o Telescópio",
+  "gui.notebook.menu.entry2.toast": "Sobre o Telescópio",
+
+  "gui.notebook.menu.entry2.left.2": "O primeiro passo da viagem espacial é",
+  "gui.notebook.menu.entry2.left.3": "escolher um bom alvo. Para isso,",
+  "gui.notebook.menu.entry2.left.4": "é claro que precisarei de um telescópio!",
+
+
+
+  "gui.notebook.menu.entry2.left.15": "Assim que eu tiver um telescópio construído",
+  "gui.notebook.menu.entry2.left.16": "deve ser fácil esperar pelas",
+  "gui.notebook.menu.entry2.left.17": "condições atmosféricas certas",
+  "gui.notebook.menu.entry2.left.18": "e contemplar a vasta imensidão",
+  "gui.notebook.menu.entry2.left.19": "do espaço.",
+
+
+  "gui.notebook.menu.entry2.right.3": "Com um diamante, um pouco de ouro e",
+  "gui.notebook.menu.entry2.right.4": "algumas lentes melhores, eu devo ser",
+  "gui.notebook.menu.entry2.right.5": "capaz de melhorar uma luneta para",
+  "gui.notebook.menu.entry2.right.6": "um telescópio! ",
+
+  "gui.notebook.menu.entry2.right.8": "Eu também precisarei de um suporte mais forte",
+  "gui.notebook.menu.entry2.right.9": "para sustentar a luneta mais pesada",
+
+
+
+
+  "gui.notebook.menu.entry3.image": "menu_illustration_3",
+  "gui.notebook.menu.entry3.name": "  Construindo uma Espaçonave",
+  "gui.notebook.menu.entry3.toast": "Construindo uma Espaçonave",
+
+  "gui.notebook.menu.entry3.left.2": "§cEM ANDAMENTO",
+  "gui.notebook.menu.entry3.left.3": "§c[A progressão e o método de",
+  "gui.notebook.menu.entry3.left.4": "§cconstruir uma espaçonave não são finais",
+  "gui.notebook.menu.entry3.left.5": "§ce é improvável que permaneçam]",
+
+
+  "gui.notebook.menu.entry3.left.8": "Para começar a trabalhar em",
+  "gui.notebook.menu.entry3.left.9": "uma espaçonave é melhor eu",
+  "gui.notebook.menu.entry3.left.10": "desenhar uma planta com",
+  "gui.notebook.menu.entry3.left.11": "alguns lápis-lazúli e papel.",
+
+
+
+  "gui.notebook.menu.entry3.right.3": "Uma vez que eu tenha uma planta, só",
+  "gui.notebook.menu.entry3.right.4": "preciso usar o poder do sistema",
+  "gui.notebook.menu.entry3.right.5": "de progresso inacabado",
+  "gui.notebook.menu.entry3.right.6": "para invocar uma espaçonave para",
+  "gui.notebook.menu.entry3.right.7": "a existência. Uau!",
+
+
+
+  "gui.notebook.menu.entry3.right.15": "§cEM ANDAMENTO",
+  "gui.notebook.menu.entry3.right.16": "§c[A progressão e o método de",
+  "gui.notebook.menu.entry3.right.17": "§cconstruir uma espaçonave não são finais",
+  "gui.notebook.menu.entry3.right.18": "§ce é improvável que permaneçam]",
+
+
+  "gui.notebook.menu.entry4.image": "menu_illustration_4",
+  "gui.notebook.menu.entry4.name": "    Abastecendo para o espaço",
+  "gui.notebook.menu.entry4.toast": "Abastecendo para o espaço",
+
+
+  "gui.notebook.menu.entry4.left.3": "Com um pouco de pó de pérola do ender",
+  "gui.notebook.menu.entry4.left.4": "pristina eu posso infundir 4 carvões em",
+  "gui.notebook.menu.entry4.left.5": "uma versão muito mais poderosa que",
+  "gui.notebook.menu.entry4.left.6": "pode ser usada como combustível para minha",
+  "gui.notebook.menu.entry4.left.7": "espaçonave.",
+
+
+  "gui.notebook.menu.entry4.left.10": "Ao interagir com as diferentes",
+  "gui.notebook.menu.entry4.left.11": "telas eu posso verificar níveis de combustível,",
+  "gui.notebook.menu.entry4.left.12": "selecionar o destino da minha jornada,",
+  "gui.notebook.menu.entry4.left.13": "e até girar meu pequeno globo!",
+
+
+  "gui.notebook.menu.entry4.right.3": "É melhor garantir que eu tenha",
+  "gui.notebook.menu.entry4.right.4": "combustível suficiente para a viagem de volta",
+  "gui.notebook.menu.entry4.right.5": "também. Quem sabe quanto tempo posso ficar",
+  "gui.notebook.menu.entry4.right.6": "neste planeta desconhecido.",
+
+
+  "gui.notebook.menu.entry4.right.10": "Para entrar na espaçonave",
+  "gui.notebook.menu.entry4.right.11": "é tão fácil quanto interagir com",
+  "gui.notebook.menu.entry4.right.12": "a porta na parte de trás!",
+
+
+  "gui.notebook.menu.entry4.right.17": "§cEM ANDAMENTO",
+  "gui.notebook.menu.entry4.right.18": "§c[Tutorial a ser reformulado no",
+  "gui.notebook.menu.entry4.right.19": "§cfuturo]",
+
+
+
+
+
+  "gui.notebook.menu.entry5.image": "menu_illustration_5",
+  "gui.notebook.menu.entry5.name": "Tornando-a sua!",
+  "gui.notebook.menu.entry5.toast": "Tornando-a sua!",
+
+  "gui.notebook.menu.entry5.left.3": "<gradient-78>Asha</gradient-87> parece um planeta agradável e adequado",
+  "gui.notebook.menu.entry5.left.4": "para minha primeira viagem. Algumas ferramentas",
+  "gui.notebook.menu.entry5.left.5": "de ferro provavelmente serão suficientes para esta",
+  "gui.notebook.menu.entry5.left.6": "jornada e serão capazes de combater",
+  "gui.notebook.menu.entry5.left.7": "quaisquer perigos que possam aparecer.",
+
+
+  "gui.notebook.menu.entry5.left.11": "Várias partes da minha espaçonave",
+  "gui.notebook.menu.entry5.left.12": "podem ser personalizadas, como os",
+  "gui.notebook.menu.entry5.left.13": "tapetes em que sentamos, e o",
+  "gui.notebook.menu.entry5.left.14": "globo dentro da cabine!",
+
+
+
+
+  "gui.notebook.menu.entry5.right.3": "[Grande reformulação da personalização da nave",
+  "gui.notebook.menu.entry5.right.4": "em breve, apresentando diferentes módulos",
+  "gui.notebook.menu.entry5.right.5": "para escolher, como armazenamento,",
+  "gui.notebook.menu.entry5.right.6": "melhoria de consumo de combustível, etc!",
+  "gui.notebook.menu.entry5.right.7": "Sinta-se à vontade para sugerir ideias no",
+  "gui.notebook.menu.entry5.right.8": "discord!]",
+
+
+
+
+  "gui.notebook.menu.entry5.right.11": "Assim que eu tiver tudo pronto,",
+  "gui.notebook.menu.entry5.right.12": "é hora de iniciar a sequência de",
+  "gui.notebook.menu.entry5.right.13": "decolagem segurando [pulo].",
+  "gui.notebook.menu.entry5.right.14": "Deseje-me sorte.",
+
+
+
+  "gui.notebook.menu.entry5.right.17": "§cEM ANDAMENTO",
+  "gui.notebook.menu.entry5.right.18": "§c[Tutorial a ser reformulado no",
+  "gui.notebook.menu.entry5.right.19": "§cfuturo]",
+
+
+  "gui.notebook.ember.entry1.name": "      <gradient-00>Ember</gradient-07> - Planeta",
+  "gui.notebook.ember.entry1.toast": "Ember - Planeta",
+  "gui.notebook.ember.entry1.image": "ember_illustration_1",
+
+  "gui.notebook.ember.entry1.left.10": "               §c§k!!!§r   <gradient-00>Ember</gradient-07>   §c§k!!!§r",
+
+  "gui.notebook.ember.entry1.left.12": "Um planeta consumido por fogo e cinzas.",
+  "gui.notebook.ember.entry1.left.13": "A superfície brilha com seus rios",
+  "gui.notebook.ember.entry1.left.14": "de rocha derretida.",
+
+  "gui.notebook.ember.entry1.left.16": "Fumaça cobre a terra sem nenhum",
+  "gui.notebook.ember.entry1.left.17": "traço de vegetação ou água.",
+
+  "gui.notebook.ember.entry1.left.19": "Qualquer coisa que o habite deve ser",
+  "gui.notebook.ember.entry1.left.20": "tão inóspita quanto seu planeta",
+
+
+  "gui.notebook.ember.entry1.right.2": "Temperatura da Superfície:",
+  "gui.notebook.ember.entry1.right.3": "§4523°C",
+  "gui.notebook.ember.entry1.right.4": "Composição Atmosférica:",
+  "gui.notebook.ember.entry1.right.5": "§484% CO2, 12% SO2, 4% outros",
+  "gui.notebook.ember.entry1.right.6": "Pressão Atmosférica:",
+  "gui.notebook.ember.entry1.right.7": "§44.6 atm",
+  "gui.notebook.ember.entry1.right.8": "Período Orbital:",
+  "gui.notebook.ember.entry1.right.9": "§4181 Dias do Mundo Superior",
+  "gui.notebook.ember.entry1.right.10": "Biomas Dominantes:",
+  "gui.notebook.ember.entry1.right.11": "§4Mares de Lava, Desertos de Cinzas",
+  "gui.notebook.ember.entry1.right.12": "Distância Orbital:",
+  "gui.notebook.ember.entry1.right.13": "§40.5 UA",
+  "gui.notebook.ember.entry1.right.14": "Atividade Sísmica:",
+  "gui.notebook.ember.entry1.right.15": "§4Extrema, erupções frequentes",
+
+  "gui.notebook.ember.entry1.right.18": "Análise Final:",
+  "gui.notebook.ember.entry1.right.19": "§4Traje espacial necessário.",
+
+
+  "gui.notebook.ember.entry2.name": "      <gradient-00>Ember</gradient-07> - 2",
+  "gui.notebook.ember.entry2.toast": "Ember - 2",
+  "gui.notebook.ember.entry2.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+  "gui.notebook.ember.entry3.name": "      <gradient-00>Ember</gradient-07> - 3",
+  "gui.notebook.ember.entry3.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+  "gui.notebook.ember.entry4.name": "      <gradient-00>Ember</gradient-07> - 4",
+  "gui.notebook.ember.entry4.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+
+
+
+  "gui.notebook.asha.entry1.name": "       <gradient-78>Asha</gradient-87> - Planeta",
+  "gui.notebook.asha.entry1.toast": "Asha - Planeta",
+  "gui.notebook.asha.entry1.image": "asha_illustration_1",
+
+  "gui.notebook.asha.entry1.left.9": "               §d§k!!!§r   <gradient-78>Asha</gradient-87>   §d§k!!!§r",
+
+  "gui.notebook.asha.entry1.left.11": "<gradient-78>Asha</gradient-87> parece ser um planeta amigável",
+  "gui.notebook.asha.entry1.left.12": "sem sinais de perigo.",
+  "gui.notebook.asha.entry1.left.13": "A composição do solo e mineral é",
+  "gui.notebook.asha.entry1.left.14": "semelhante à do Mundo Superior, então",
+  "gui.notebook.asha.entry1.left.15": "recursos naturais devem ser tão",
+  "gui.notebook.asha.entry1.left.16": "fáceis de obter.",
+
+  "gui.notebook.asha.entry1.left.18": "O planeta perfeito para minha primeira",
+  "gui.notebook.asha.entry1.left.19": "expedição de outro mundo!",
+
+
+  "gui.notebook.asha.entry1.right.2": "Temperatura da Superfície:",
+  "gui.notebook.asha.entry1.right.3": "§222°C",
+  "gui.notebook.asha.entry1.right.4": "Composição Atmosférica:",
+  "gui.notebook.asha.entry1.right.5": "§278% N, 20% O2, 2% outros",
+  "gui.notebook.asha.entry1.right.6": "Pressão Atmosférica:",
+  "gui.notebook.asha.entry1.right.7": "§21.17 atm",
+  "gui.notebook.asha.entry1.right.8": "Período Orbital:",
+  "gui.notebook.asha.entry1.right.9": "§2395 Dias do Mundo Superior",
+  "gui.notebook.asha.entry1.right.10": "Biomas Dominantes:",
+  "gui.notebook.asha.entry1.right.11": "§2Florestas, rios e pradarias",
+  "gui.notebook.asha.entry1.right.12": "Distância Orbital:",
+  "gui.notebook.asha.entry1.right.13": "§20.8 UA",
+  "gui.notebook.asha.entry1.right.14": "Atividade Sísmica:",
+  "gui.notebook.asha.entry1.right.15": "§2Mínima, geologicamente estável",
+
+  "gui.notebook.asha.entry1.right.18": "Análise Final:",
+  "gui.notebook.asha.entry1.right.19": "§2Nenhum traje espacial necessário",
+
+
+
+  "gui.notebook.asha.entry2.name": "  <gradient-78>Asha</gradient-87> - Fauna e Flora",
+  "gui.notebook.asha.entry2.toast": "Asha - Fauna e Flora",
+  "gui.notebook.asha.entry2.image": "asha_illustration_2",
+
+  "gui.notebook.asha.entry2.left.11": "O planeta inteiro parece familiar.",
+  "gui.notebook.asha.entry2.left.12": "Como um planeta gêmeo do Mundo Superior.",
+
+  "gui.notebook.asha.entry2.left.14": "Fauna e flora florescem",
+  "gui.notebook.asha.entry2.left.15": "em todos os lugares sem sinais de",
+  "gui.notebook.asha.entry2.left.16": "predadores naturais.",
+
+  "gui.notebook.asha.entry2.left.18": "Eu mal posso acreditar que um planeta tão",
+  "gui.notebook.asha.entry2.left.19": "cheio de vida estava escondido bem ao lado",
+  "gui.notebook.asha.entry2.left.20": "do mundo superior no céu.",
+
+  "gui.notebook.asha.entry2.right.2": "Mais pesquisas e testes são",
+  "gui.notebook.asha.entry2.right.3": "necessários, mas cada criatura que encontro",
+  "gui.notebook.asha.entry2.right.4": "parece curiosa em vez de",
+  "gui.notebook.asha.entry2.right.5": "ter medo de eu chegar perto.",
+
+  "gui.notebook.asha.entry2.right.8": "Eu encontrei dois peixes que",
+  "gui.notebook.asha.entry2.right.9": "parecem se odiar,",
+  "gui.notebook.asha.entry2.right.10": "mas eles nadam juntos...",
+
+
+
+
+
+  "gui.notebook.asha.entry3.name": "     <gradient-78>Asha</gradient-87> - Véu Lunar",
+  "gui.notebook.asha.entry3.toast": "Véu Lunar",
+  "gui.notebook.asha.entry3.image": "asha_illustration_3",
+
+  "gui.notebook.asha.entry3.left.11": "Eu encontrei essas flores únicas.",
+
+  "gui.notebook.asha.entry3.left.13": "Eu as chamei de Véu Lunar por enquanto.",
+
+  "gui.notebook.asha.entry3.left.15": "Elas parecem abrir sob a",
+  "gui.notebook.asha.entry3.left.16": "luz da lua para liberar seu pólen brilhante,",
+  "gui.notebook.asha.entry3.left.17": "iluminando a área.",
+
+  "gui.notebook.asha.entry3.left.19": "Possivelmente para atrair polinizadores?",
+
+
+  "gui.notebook.asha.entry3.right.3": "Elas ficariam lindas",
+  "gui.notebook.asha.entry3.right.4": "no meu jardim de volta no",
+  "gui.notebook.asha.entry3.right.5": "Mundo Superior. Certamente não",
+  "gui.notebook.asha.entry3.right.6": "fará mal levar algumas de volta para casa...",
+
+  "gui.notebook.asha.entry3.right.17": "... Eu me pergunto o que minhas abelhas",
+  "gui.notebook.asha.entry3.right.18": "pensarão delas...",
+
+
+
+
+
+  "gui.notebook.asha.entry4.name": "     <gradient-78>Asha</gradient-87> - Lírio Doce",
+  "gui.notebook.asha.entry4.toast": "Lírios Doce",
+  "gui.notebook.asha.entry4.image": "asha_illustration_4",
+
+  "gui.notebook.asha.entry4.left.11": "Esta flor semelhante a um lírio cheira estranhamente",
+  "gui.notebook.asha.entry4.left.12": "doce. Uma das pequenas criaturas",
+  "gui.notebook.asha.entry4.left.13": "acabou de comer as pétalas.",
+
+  "gui.notebook.asha.entry4.left.15": "Só faz sentido eu chamá-las",
+  "gui.notebook.asha.entry4.left.16": "de Lírio Doce.",
+
+  "gui.notebook.asha.entry4.right.3": "Moê-la em pó é fácil",
+  "gui.notebook.asha.entry4.right.4": "o suficiente, ela serve como o substituto",
+  "gui.notebook.asha.entry4.right.5": "perfeito da cana-de-açúcar",
+  "gui.notebook.asha.entry4.right.6": "que estou acostumado.",
+
+
+  "gui.notebook.asha.entry4.right.15": "Algumas pequenas criaturas que encontrei",
+  "gui.notebook.asha.entry4.right.16": "realmente gostaram deste pó. Se eu",
+  "gui.notebook.asha.entry4.right.17": "pudesse encontrar algum tipo de fruta eu",
+  "gui.notebook.asha.entry4.right.18": "poderia fazer guloseimas para elas e",
+  "gui.notebook.asha.entry4.right.19": "possivelmente fazer um amigo?",
+
+
+  "gui.notebook.overworld.entry1.name": "    Mundo Superior - 1",
+  "gui.notebook.overworld.entry1.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+  "gui.notebook.overworld.entry2.name": "    Mundo Superior - 2",
+  "gui.notebook.overworld.entry2.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+  "gui.notebook.overworld.entry3.name": "    Mundo Superior - 3",
+  "gui.notebook.overworld.entry3.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+  "gui.notebook.overworld.entry4.name": "    Mundo Superior - 4",
+  "gui.notebook.overworld.entry4.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+
+  "gui.notebook.lunamar.entry1.name": "      <gradient-54>Lunamar</gradient-66> - Planeta",
+  "gui.notebook.lunamar.entry1.toast": "Lunamar - Planeta",
+  "gui.notebook.lunamar.entry1.image": "lunamar_illustration_1",
+
+  "gui.notebook.lunamar.entry1.left.11": "            §3§k!!!§r   <gradient-54>Lunamar</gradient-66>   §3§k!!!§r",
+
+  "gui.notebook.lunamar.entry1.left.13": "Um planeta gigante, escuro e coberto",
+  "gui.notebook.lunamar.entry1.left.14": "pelo oceano, iluminado por luzes cintilantes",
+  "gui.notebook.lunamar.entry1.left.15": "abaixo de sua superfície.",
+
+  "gui.notebook.lunamar.entry1.left.17": "Apesar de sua distância do Sol,",
+  "gui.notebook.lunamar.entry1.left.18": "<gradient-54>Lunamar</gradient-66> parece manter um clima",
+  "gui.notebook.lunamar.entry1.left.19": "ameno, provavelmente devido à sua atmosfera densa",
+  "gui.notebook.lunamar.entry1.left.20": "retendo calor abaixo.",
+
+
+  "gui.notebook.lunamar.entry1.right.2": "Temperatura da Superfície:",
+  "gui.notebook.lunamar.entry1.right.3": "§28°C",
+  "gui.notebook.lunamar.entry1.right.4": "Composição Atmosférica:",
+  "gui.notebook.lunamar.entry1.right.5": "§270%% N, 18% O2, 8% CO2, 4% outros",
+  "gui.notebook.lunamar.entry1.right.6": "Pressão Atmosférica:",
+  "gui.notebook.lunamar.entry1.right.7": "§22.2 atm",
+  "gui.notebook.lunamar.entry1.right.8": "Período Orbital:",
+  "gui.notebook.lunamar.entry1.right.9": "§2849 Dias do Mundo Superior",
+  "gui.notebook.lunamar.entry1.right.10": "Biomas Dominantes:",
+  "gui.notebook.lunamar.entry1.right.11": "§2Oceanos, com o muito raro",
+  "gui.notebook.lunamar.entry1.right.12": "Distância Orbital:",
+  "gui.notebook.lunamar.entry1.right.13": "§22.06 UA",
+  "gui.notebook.lunamar.entry1.right.14": "Atividade Sísmica:",
+  "gui.notebook.lunamar.entry1.right.15": "§2Baixa, fontes subaquáticas são comuns",
+
+  "gui.notebook.lunamar.entry1.right.18": "Análise Final:",
+  "gui.notebook.lunamar.entry1.right.19": "§2Traje de mergulho recomendado para.",
+  "gui.notebook.lunamar.entry1.right.20": "§2exploração subaquática mais profunda.",
+
+
+  "gui.notebook.lunamar.entry2.name": "     <gradient-54>Lunamar</gradient-66> - Illuma",
+  "gui.notebook.lunamar.entry2.toast": "Illuma",
+  "gui.notebook.lunamar.entry2.image": "lunamar_illustration_2",
+
+  "gui.notebook.lunamar.entry2.left.11": "Essas flores brilhantes florescem",
+  "gui.notebook.lunamar.entry2.left.12": "quando submersas ou durante o tempo de chuva.",
+
+  "gui.notebook.lunamar.entry2.left.14": "Enquanto florescem, elas emitem um",
+  "gui.notebook.lunamar.entry2.left.15": "brilho suave que ilumina o",
+  "gui.notebook.lunamar.entry2.left.16": "fundo do oceano.",
+
+  "gui.notebook.lunamar.entry3.name": "      <gradient-54>Lunamar</gradient-66> - 3",
+  "gui.notebook.lunamar.entry3.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r",
+
+  "gui.notebook.lunamar.entry4.name": "      <gradient-54>Lunamar</gradient-66> - 4",
+  "gui.notebook.lunamar.entry4.left.3": "               §c§k!!!§r   §cWIP   §c§k!!!§r"
+
+
+
+}
