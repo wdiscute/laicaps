@@ -20,14 +20,7 @@ build
 # other
 eclipse
 run
-!run
 runs
 run-data
-
-*
-!.gitignore
-!run/
-!run/*
-
 
 repo
