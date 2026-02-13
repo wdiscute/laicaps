@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.entity.rocket.rocketparts;
 
-import com.wdiscute.laicaps.ModTags;
+import com.wdiscute.laicaps.registry.ModTags;
 import com.wdiscute.laicaps.entity.rocket.RE;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

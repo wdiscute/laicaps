@@ -4,8 +4,8 @@ import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.wdiscute.laicaps.util.AdvHelper;
 import com.wdiscute.laicaps.Laicaps;
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.Payloads;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.io.Payloads;
 import com.wdiscute.libtooltips.Tooltips;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -241,10 +241,10 @@ public class MainScreen extends Screen
 
         //check knowledge
         boolean planetDiscovered = planet.is(
-                ModItems.EMBER) && emberDiscovered ||
-                planet.is(ModItems.ASHA) && ashaDiscovered ||
-                planet.is(ModItems.OVERWORLD) ||
-                planet.is(ModItems.LUNAMAR) && lunamarDiscovered;
+                ModItems.EMBER_ENTRY) && emberDiscovered ||
+                planet.is(ModItems.ASHA_ENTRY) && ashaDiscovered ||
+                planet.is(ModItems.OVERWORLD_ENTRY) ||
+                planet.is(ModItems.LUNAMAR_ENTRY) && lunamarDiscovered;
 
 
         if (!planetDiscovered)
@@ -292,46 +292,46 @@ public class MainScreen extends Screen
 
         if (Minecraft.getInstance().player.level().dimension() == EMBER_KEY)
         {
-            if (planet.is(ModItems.EMBER)) fuelRequired = 120;
-            if (planet.is(ModItems.ASHA)) fuelRequired = 490;
-            if (planet.is(ModItems.OVERWORLD)) fuelRequired = 700;
-            if (planet.is(ModItems.LUNAMAR)) fuelRequired = 1240;
+            if (planet.is(ModItems.EMBER_ENTRY)) fuelRequired = 120;
+            if (planet.is(ModItems.ASHA_ENTRY)) fuelRequired = 490;
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 700;
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 1240;
             selectedPlanetHasAFuelConsumedSet = true;
         }
 
         if (Minecraft.getInstance().player.level().dimension() == ASHA_KEY)
         {
-            if (planet.is(ModItems.EMBER)) fuelRequired = 490;
-            if (planet.is(ModItems.ASHA)) fuelRequired = 120;
-            if (planet.is(ModItems.OVERWORLD)) fuelRequired = 330;
-            if (planet.is(ModItems.LUNAMAR)) fuelRequired = 870;
+            if (planet.is(ModItems.EMBER_ENTRY)) fuelRequired = 490;
+            if (planet.is(ModItems.ASHA_ENTRY)) fuelRequired = 120;
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 330;
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 870;
             selectedPlanetHasAFuelConsumedSet = true;
         }
 
         if (Minecraft.getInstance().player.level().dimension() == OVERWORLD_KEY)
         {
-            if (planet.is(ModItems.EMBER)) fuelRequired = 790;
-            if (planet.is(ModItems.ASHA)) fuelRequired = 330;
-            if (planet.is(ModItems.OVERWORLD)) fuelRequired = 120;
-            if (planet.is(ModItems.LUNAMAR)) fuelRequired = 660;
+            if (planet.is(ModItems.EMBER_ENTRY)) fuelRequired = 790;
+            if (planet.is(ModItems.ASHA_ENTRY)) fuelRequired = 330;
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 120;
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 660;
             selectedPlanetHasAFuelConsumedSet = true;
         }
 
         if (Minecraft.getInstance().player.level().dimension() == LUNAMAR_KEY)
         {
-            if (planet.is(ModItems.EMBER)) fuelRequired = 1240;
-            if (planet.is(ModItems.ASHA)) fuelRequired = 870;
-            if (planet.is(ModItems.OVERWORLD)) fuelRequired = 660;
-            if (planet.is(ModItems.LUNAMAR)) fuelRequired = 120;
+            if (planet.is(ModItems.EMBER_ENTRY)) fuelRequired = 1240;
+            if (planet.is(ModItems.ASHA_ENTRY)) fuelRequired = 870;
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 660;
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 120;
             selectedPlanetHasAFuelConsumedSet = true;
         }
 
         if (!selectedPlanetHasAFuelConsumedSet)
         {
-            if (planet.is(ModItems.EMBER)) fuelRequired = 120;
-            if (planet.is(ModItems.ASHA)) fuelRequired = 120;
-            if (planet.is(ModItems.OVERWORLD)) fuelRequired = 120;
-            if (planet.is(ModItems.LUNAMAR)) fuelRequired = 120;
+            if (planet.is(ModItems.EMBER_ENTRY)) fuelRequired = 120;
+            if (planet.is(ModItems.ASHA_ENTRY)) fuelRequired = 120;
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 120;
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 120;
         }
 
         return fuel > fuelRequired;
@@ -342,44 +342,44 @@ public class MainScreen extends Screen
     {
         if (Minecraft.getInstance().player.level().dimension() == EMBER_KEY)
         {
-            if (planet.is(ModItems.EMBER)) renderImage(guiGraphics, EMBER_TO_EMBER);
-            if (planet.is(ModItems.ASHA)) renderImage(guiGraphics, EMBER_TO_ASHA);
-            if (planet.is(ModItems.OVERWORLD)) renderImage(guiGraphics, EMBER_TO_OVERWORLD);
-            if (planet.is(ModItems.LUNAMAR)) renderImage(guiGraphics, EMBER_TO_LUNAMAR);
+            if (planet.is(ModItems.EMBER_ENTRY)) renderImage(guiGraphics, EMBER_TO_EMBER);
+            if (planet.is(ModItems.ASHA_ENTRY)) renderImage(guiGraphics, EMBER_TO_ASHA);
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) renderImage(guiGraphics, EMBER_TO_OVERWORLD);
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) renderImage(guiGraphics, EMBER_TO_LUNAMAR);
             return;
         }
 
         if (Minecraft.getInstance().player.level().dimension() == ASHA_KEY)
         {
-            if (planet.is(ModItems.EMBER)) renderImage(guiGraphics, ASHA_TO_EMBER);
-            if (planet.is(ModItems.ASHA)) renderImage(guiGraphics, ASHA_TO_ASHA);
-            if (planet.is(ModItems.OVERWORLD)) renderImage(guiGraphics, ASHA_TO_OVERWORLD);
-            if (planet.is(ModItems.LUNAMAR)) renderImage(guiGraphics, ASHA_TO_LUNAMAR);
+            if (planet.is(ModItems.EMBER_ENTRY)) renderImage(guiGraphics, ASHA_TO_EMBER);
+            if (planet.is(ModItems.ASHA_ENTRY)) renderImage(guiGraphics, ASHA_TO_ASHA);
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) renderImage(guiGraphics, ASHA_TO_OVERWORLD);
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) renderImage(guiGraphics, ASHA_TO_LUNAMAR);
             return;
         }
 
         if (Minecraft.getInstance().player.level().dimension() == OVERWORLD_KEY)
         {
-            if (planet.is(ModItems.EMBER)) renderImage(guiGraphics, OVERWORLD_TO_EMBER);
-            if (planet.is(ModItems.ASHA)) renderImage(guiGraphics, OVERWORLD_TO_ASHA);
-            if (planet.is(ModItems.OVERWORLD)) renderImage(guiGraphics, OVERWORLD_TO_OVERWORLD);
-            if (planet.is(ModItems.LUNAMAR)) renderImage(guiGraphics, OVERWORLD_TO_LUNAMAR);
+            if (planet.is(ModItems.EMBER_ENTRY)) renderImage(guiGraphics, OVERWORLD_TO_EMBER);
+            if (planet.is(ModItems.ASHA_ENTRY)) renderImage(guiGraphics, OVERWORLD_TO_ASHA);
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) renderImage(guiGraphics, OVERWORLD_TO_OVERWORLD);
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) renderImage(guiGraphics, OVERWORLD_TO_LUNAMAR);
             return;
         }
 
         if (Minecraft.getInstance().player.level().dimension() == LUNAMAR_KEY)
         {
-            if (planet.is(ModItems.EMBER)) renderImage(guiGraphics, LUNAMAR_TO_EMBER);
-            if (planet.is(ModItems.ASHA)) renderImage(guiGraphics, LUNAMAR_TO_ASHA);
-            if (planet.is(ModItems.OVERWORLD)) renderImage(guiGraphics, LUNAMAR_TO_OVERWORLD);
-            if (planet.is(ModItems.LUNAMAR)) renderImage(guiGraphics, LUNAMAR_TO_LUNAMAR);
+            if (planet.is(ModItems.EMBER_ENTRY)) renderImage(guiGraphics, LUNAMAR_TO_EMBER);
+            if (planet.is(ModItems.ASHA_ENTRY)) renderImage(guiGraphics, LUNAMAR_TO_ASHA);
+            if (planet.is(ModItems.OVERWORLD_ENTRY)) renderImage(guiGraphics, LUNAMAR_TO_OVERWORLD);
+            if (planet.is(ModItems.LUNAMAR_ENTRY)) renderImage(guiGraphics, LUNAMAR_TO_LUNAMAR);
             return;
         }
 
-        if (planet.is(ModItems.EMBER)) renderImage(guiGraphics, UNKNOWN_TO_EMBER);
-        if (planet.is(ModItems.ASHA)) renderImage(guiGraphics, UNKNOWN_TO_ASHA);
-        if (planet.is(ModItems.OVERWORLD)) renderImage(guiGraphics, UNKNOWN_TO_OVERWORLD);
-        if (planet.is(ModItems.LUNAMAR)) renderImage(guiGraphics, UNKNOWN_TO_LUNAMAR);
+        if (planet.is(ModItems.EMBER_ENTRY)) renderImage(guiGraphics, UNKNOWN_TO_EMBER);
+        if (planet.is(ModItems.ASHA_ENTRY)) renderImage(guiGraphics, UNKNOWN_TO_ASHA);
+        if (planet.is(ModItems.OVERWORLD_ENTRY)) renderImage(guiGraphics, UNKNOWN_TO_OVERWORLD);
+        if (planet.is(ModItems.LUNAMAR_ENTRY)) renderImage(guiGraphics, UNKNOWN_TO_LUNAMAR);
 
     }
 
@@ -434,14 +434,15 @@ public class MainScreen extends Screen
             if (Objects.equals(planet, "ember"))
             {
                 list.add(Component.translatable("gui.laicaps.main_screen.tooltip.generic.chart"));
-                if (emberEntries < Laicaps.EMBER_ENTRIES)
+                //todo there is more to explore here
+                //if (emberEntries < Laicaps.EMBER_ENTRIES)
                     list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.research"));
             }
 
             if (Objects.equals(planet, "asha"))
             {
                 list.add(Component.translatable("gui.laicaps.main_screen.tooltip.generic.chart"));
-                if (ashaEntries < Laicaps.ASHA_ENTRIES)
+                //if (ashaEntries < Laicaps.ASHA_ENTRIES)
                     list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.research"));
             }
 
@@ -453,7 +454,7 @@ public class MainScreen extends Screen
             if (Objects.equals(planet, "lunamar"))
             {
                 list.add(Component.translatable("gui.laicaps.main_screen.tooltip.generic.chart"));
-                if (lunamarEntries < Laicaps.LUNAMAR_ENTRIES)
+                //if (lunamarEntries < Laicaps.LUNAMAR_ENTRIES)
                     list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.research"));
             }
         }

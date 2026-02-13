@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.block.single;
 
-import com.wdiscute.laicaps.ModTags;
+import com.wdiscute.laicaps.registry.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;

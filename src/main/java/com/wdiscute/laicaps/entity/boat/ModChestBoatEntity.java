@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.entity.boat;
 
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.ModEntities;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.ModEntities;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;

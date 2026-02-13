@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.entity.magmaboss.shield;
 
-import com.wdiscute.laicaps.ModEntities;
+import com.wdiscute.laicaps.registry.ModEntities;
 import com.wdiscute.laicaps.entity.magmaboss.magma.MagmaEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;

@@ -2,8 +2,8 @@ package com.wdiscute.laicaps.block.symbol;
 
 import com.mojang.serialization.MapCodec;
 import com.wdiscute.laicaps.item.ModDataComponents;
-import com.wdiscute.laicaps.ModBlockEntity;
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModBlockEntity;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;

@@ -656,14 +656,15 @@ public class TelescopeScreen extends AbstractContainerScreen<TelescopeMenu>
             if (Objects.equals(input, "ember"))
             {
                 list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.travel"));
-                if (emberEntries < Laicaps.EMBER_ENTRIES)
+                //todo there is more to explore here tooltip
+                //if (emberEntries < Laicaps.EMBER_ENTRIES)
                     list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.research"));
             }
 
             if (Objects.equals(input, "asha"))
             {
                 list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.travel"));
-                if (ashaEntries < Laicaps.ASHA_ENTRIES)
+                //if (ashaEntries < Laicaps.ASHA_ENTRIES)
                     list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.research"));
             }
 
@@ -675,7 +676,7 @@ public class TelescopeScreen extends AbstractContainerScreen<TelescopeMenu>
             if (Objects.equals(input, "lunamar"))
             {
                 list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.travel"));
-                if (lunamarEntries < Laicaps.LUNAMAR_ENTRIES)
+                //if (lunamarEntries < Laicaps.LUNAMAR_ENTRIES)
                     list.add(Component.translatable("gui.laicaps.telescope.tooltip.generic.research"));
             }
         }

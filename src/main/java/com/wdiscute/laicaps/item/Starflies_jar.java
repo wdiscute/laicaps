@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.item;
 
-import com.wdiscute.laicaps.ModBlocks;
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModBlocks;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -21,7 +21,7 @@ public class Starflies_jar extends Item
         {
             context.getLevel().setBlockAndUpdate(context.getClickedPos().above(), ModBlocks.STARFLIES_BLOCK.get().defaultBlockState());
             context.getItemInHand().shrink(1);
-            context.getPlayer().addItem(new ItemStack(ModItems.JAR.get()));
+            context.getPlayer().addItem(new ItemStack(ModBlocks.JAR.get()));
             return InteractionResult.SUCCESS;
         }
 

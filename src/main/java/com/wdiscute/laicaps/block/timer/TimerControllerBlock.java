@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.block.timer;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModBlockEntity;
+import com.wdiscute.laicaps.registry.ModBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;

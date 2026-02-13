@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.block.single;
 
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;

@@ -1,9 +1,9 @@
 package com.wdiscute.laicaps.notebook;
 
+import com.wdiscute.laicaps.U;
 import com.wdiscute.laicaps.item.EntryUnlockableItem;
 import com.wdiscute.laicaps.util.AdvHelper;
-import com.wdiscute.laicaps.block.astronomytable.NotebookMenu;
-import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.Payloads;
+import com.wdiscute.laicaps.registry.io.Payloads;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -17,7 +17,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.Nullable;
 
-public class NotebookItem extends EntryUnlockableItem implements MenuProvider
+public class NotebookItem extends EntryUnlockableItem
 {
     public NotebookItem(Properties properties, String adv, String criteria)
     {
@@ -27,25 +27,7 @@ public class NotebookItem extends EntryUnlockableItem implements MenuProvider
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand)
     {
-        player.openMenu(this);
-        if(player instanceof ServerPlayer sp && !AdvHelper.hasAdvancementCriteria(sp, "menu_entries", "entry2"))
-        {
-            AdvHelper.awardAdvancementCriteria(sp, "menu_entries", "entry2");
-            PacketDistributor.sendToPlayer(sp, new Payloads.EntryUnlockedPayload("menu_entries", "entry2"));
-        }
-
+        if(level.isClientSide) U.openScreen(new NotebookScreen());
         return super.use(level, player, usedHand);
-    }
-
-    @Override
-    public Component getDisplayName()
-    {
-        return Component.literal("notebook");
-    }
-
-    @Override
-    public @Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player)
-    {
-        return new NotebookMenu(i, inventory);
     }
 }

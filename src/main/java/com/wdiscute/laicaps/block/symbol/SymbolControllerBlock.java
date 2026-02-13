@@ -1,9 +1,9 @@
 package com.wdiscute.laicaps.block.symbol;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModItems;
 import com.wdiscute.laicaps.item.ModDataComponents;
-import com.wdiscute.laicaps.ModBlockEntity;
+import com.wdiscute.laicaps.registry.ModBlockEntity;
 import com.wdiscute.laicaps.util.TickableBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -95,10 +95,10 @@ public class SymbolControllerBlock extends HorizontalDirectionalBlock implements
         if (!level.isClientSide)
         {
 
-            if(stack.is(ModItems.ASHA) && level.getBlockEntity(pPos) instanceof SymbolControllerBlockEntity scbe)
+            //if(stack.is(ModItems.ASHA) && level.getBlockEntity(pPos) instanceof SymbolControllerBlockEntity scbe)
             {
-                scbe.showLinkedBlocks(player);
-                return ItemInteractionResult.SUCCESS;
+                //scbe.showLinkedBlocks(player);
+                //return ItemInteractionResult.SUCCESS;
             }
 
 

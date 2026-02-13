@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.block.combat;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModBlockEntity;
+import com.wdiscute.laicaps.registry.ModBlockEntity;
 import com.wdiscute.laicaps.util.TickableBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

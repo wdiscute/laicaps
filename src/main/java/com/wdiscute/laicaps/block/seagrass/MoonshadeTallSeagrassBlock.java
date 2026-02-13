@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.block.seagrass;
 
-import com.wdiscute.laicaps.ModBlocks;
+import com.wdiscute.laicaps.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;

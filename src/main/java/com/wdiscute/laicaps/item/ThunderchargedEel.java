@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.item;
 
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -33,7 +33,7 @@ public class ThunderchargedEel extends Item
                 if(r.nextFloat() > 0.9f)
                 {
                     stack.shrink(1);
-                    sp.addItem(new ItemStack(ModItems.EEL.get()));
+                    //sp.addItem(new ItemStack(ModItems.EEL.get()));
                 }
             }
         }

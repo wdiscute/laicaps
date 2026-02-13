@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.entity.bubblemouth;
 
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.ModParticles;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.ModParticles;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;

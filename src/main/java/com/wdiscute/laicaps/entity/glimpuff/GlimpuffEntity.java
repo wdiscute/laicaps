@@ -1,10 +1,10 @@
 package com.wdiscute.laicaps.entity.glimpuff;
 
-import com.wdiscute.laicaps.ModBlocks;
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModBlocks;
+import com.wdiscute.laicaps.registry.ModItems;
 import com.wdiscute.laicaps.block.single.MoonshadeKelpBlock;
-import com.wdiscute.laicaps.ModParticles;
-import com.wdiscute.laicaps.ModSounds;
+import com.wdiscute.laicaps.registry.ModParticles;
+import com.wdiscute.laicaps.registry.ModSounds;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;

@@ -1,8 +1,8 @@
 package com.wdiscute.laicaps.block.rotating;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModBlockEntity;
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModBlockEntity;
+import com.wdiscute.laicaps.registry.ModItems;
 import com.wdiscute.laicaps.util.TickableBlockEntity;
 import com.wdiscute.laicaps.item.ModDataComponents;
 import net.minecraft.core.BlockPos;

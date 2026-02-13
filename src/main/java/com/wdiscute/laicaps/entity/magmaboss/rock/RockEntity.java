@@ -1,14 +1,7 @@
 package com.wdiscute.laicaps.entity.magmaboss.rock;
 
-import com.wdiscute.laicaps.ModEntities;
-import com.wdiscute.laicaps.ModParticles;
-import com.wdiscute.laicaps.entity.bubblemouth.BubblemouthModel;
-import com.wdiscute.laicaps.entity.magmaboss.magma.MagmaEntity;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.ElytraModel;
-import net.minecraft.client.model.geom.EntityModelSet;
-import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.client.renderer.entity.layers.ElytraLayer;
+import com.wdiscute.laicaps.registry.ModEntities;
+import com.wdiscute.laicaps.registry.ModParticles;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -27,8 +20,6 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.neoforge.client.event.RenderPlayerEvent;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.entity.snuffler;
 
-import com.wdiscute.laicaps.ModEntities;
+import com.wdiscute.laicaps.registry.ModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "laicaps"
+    }
+  ],
+  "background": {
+    "height": 0,
+    "offset_x": 0,
+    "offset_y": 0,
+    "path": "laicaps:missingno",
+    "width": 0
+  },
+  "can_be_bookmarked": true,
+  "group": "laicaps:daw",
+  "hide_until_unlocked": true,
+  "icon": {
+    "height": 0,
+    "offset_x": 0,
+    "offset_y": 0,
+    "path": "laicaps:missingno",
+    "width": 0
+  },
+  "obfuscated_until_unlocked": true,
+  "overlay": {
+    "height": 0,
+    "offset_x": 0,
+    "offset_y": 0,
+    "path": "laicaps:missingno",
+    "width": 0
+  },
+  "text": "",
+  "title": ""
+}

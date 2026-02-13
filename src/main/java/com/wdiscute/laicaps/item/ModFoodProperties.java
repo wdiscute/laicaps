@@ -1,6 +1,7 @@
 package com.wdiscute.laicaps.item;
 
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModBlocks;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -26,7 +27,8 @@ public class ModFoodProperties
     public static final FoodProperties OAKHEART_BERRIES_JAM = new FoodProperties.Builder()
             .nutrition(5)
             .saturationModifier(3)
-            .usingConvertsTo(ModItems.JAR)
+            //todo fix this
+            //.usingConvertsTo(ModBlocks.JAR.asItem())
             .build();
 
     public static final FoodProperties SNUFFLER_CHOP = new FoodProperties.Builder()

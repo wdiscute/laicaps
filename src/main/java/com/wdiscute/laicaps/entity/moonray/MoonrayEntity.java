@@ -1,10 +1,9 @@
 package com.wdiscute.laicaps.entity.moonray;
 
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;

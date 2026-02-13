@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.block.telescope;
 
-import com.wdiscute.laicaps.ModBlockEntity;
+import com.wdiscute.laicaps.registry.ModBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;

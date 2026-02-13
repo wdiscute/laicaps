@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.block.single;
 
-import com.wdiscute.laicaps.ModBlocks;
+import com.wdiscute.laicaps.registry.ModBlocks;
 import com.wdiscute.laicaps.worldgen.ModConfiguredFeatures;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;

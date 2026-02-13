@@ -727,12 +727,7 @@
 
 
 
-  "gui.notebook.menu.missing" : "         §c§k!!!!!!!!!!!!!",
-  "gui.notebook.ember.missing" : "      <gradient-00>Ember</gradient-07> - §k!!!!!!!!!",
-  "gui.notebook.asha.missing" : "       <gradient-78>Asha</gradient-87> - §c§k!!!!!!!!!",
-  "gui.notebook.overworld.missing" : "  <gradient-27>Overworld</gradient-38> - §c§k!!!!!!!!!",
-  "gui.notebook.lunamar.missing" : "    <gradient-54>Lunamar</gradient-66> - §c§k!!!!!!!!!",
-
+  "gui.notebook.missing" : "         §c§k!!!!!!!!!!!!!",
 
 
   "gui.notebook.menu.entry1.image" : "menu_illustration_1",

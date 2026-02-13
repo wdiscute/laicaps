@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "laicaps:item/starflies_jar"
-  }
+  "parent": "laicaps:block/starflies_jar"
 }

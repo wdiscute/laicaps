@@ -3,28 +3,16 @@ package com.wdiscute.laicaps.entity.bluetale;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import com.wdiscute.laicaps.Laicaps;
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.entity.glimpuff.GlimpuffEntity;
-import net.minecraft.client.Minecraft;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.resources.model.ModelManager;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.MapItem;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
-import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.client.event.RenderItemInFrameEvent;
-import net.neoforged.neoforge.common.NeoForge;
 
 public class BluetaleRenderer extends MobRenderer<BluetaleEntity, BluetaleModel<BluetaleEntity>>
 {
@@ -81,13 +69,7 @@ public class BluetaleRenderer extends MobRenderer<BluetaleEntity, BluetaleModel<
             poseStack.mulPose(Axis.YP.rotationDegrees(90));
         }
 
-        ItemStack itemstack = new ItemStack(ModItems.AZURE_TUNA.get());
-
-        this.itemRenderer.renderStatic(itemstack, ItemDisplayContext.FIXED, packedLight,
-                OverlayTexture.NO_OVERLAY, poseStack, buffer, bluetaleEntity.level(), bluetaleEntity.getId());
-
         poseStack.popPose();
-
 
         super.render(bluetaleEntity, entityYaw, partialTicks, poseStack, buffer, packedLight);
     }

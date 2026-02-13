@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.block.single;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModBlocks;
+import com.wdiscute.laicaps.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -35,12 +35,6 @@ public class SweetlilyBlock extends BushBlock
     @Override
     protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos)
     {
-        if (state.is(ModBlocks.ASHA_GRASS_BLOCK.get()))
-            return true;
-
-        if (state.is(ModBlocks.ASHA_DIRT.get()))
-            return true;
-
-        return false;
+        return state.is(ModBlocks.ASHA_DIRT.get()) || state.is(ModBlocks.ASHA_GRASS_BLOCK.get());
     }
 }

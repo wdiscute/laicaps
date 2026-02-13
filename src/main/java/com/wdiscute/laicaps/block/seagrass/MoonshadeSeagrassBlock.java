@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.block.seagrass;
 
-import com.wdiscute.laicaps.ModBlocks;
+import com.wdiscute.laicaps.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;

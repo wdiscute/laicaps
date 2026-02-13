@@ -1,15 +1,11 @@
 package com.wdiscute.laicaps.worldgen;
 
 import com.mojang.serialization.Codec;
-import com.wdiscute.laicaps.ModBlocks;
-import com.wdiscute.laicaps.block.seagrass.MoonshadeSeagrassBlock;
-import com.wdiscute.laicaps.block.single.MoonshadeKelpBlock;
+import com.wdiscute.laicaps.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
-import net.minecraft.world.level.block.SeagrassBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.levelgen.Heightmap;

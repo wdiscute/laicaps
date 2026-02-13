@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.entity.nimble;
 
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.ModEntities;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.ModEntities;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

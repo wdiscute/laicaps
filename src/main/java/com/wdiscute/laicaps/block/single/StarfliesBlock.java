@@ -1,7 +1,8 @@
 package com.wdiscute.laicaps.block.single;
 
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.ModParticles;
+import com.wdiscute.laicaps.registry.ModBlocks;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.ModParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -46,7 +47,7 @@ public class StarfliesBlock extends Block
             if (player.isCreative())
                 return Block.box(0.0F, 0.0F, 0.0F, 16.0F, 16.0F, 16.0F);
 
-            if ((context.isHoldingItem(ModItems.STARFLIES_JAR.get()) || context.isHoldingItem(ModItems.JAR.get())) && state.getValue(ACTIVE))
+            if ((context.isHoldingItem(ModBlocks.STARFLIES_JAR.asItem()) || context.isHoldingItem(ModBlocks.JAR.asItem())) && state.getValue(ACTIVE))
                 return Block.box(0.0F, 0.0F, 0.0F, 16.0F, 16.0F, 16.0F);
 
             return Block.box(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
@@ -58,7 +59,7 @@ public class StarfliesBlock extends Block
     @Override
     public ItemStack getCloneItemStack(BlockState state, HitResult target, LevelReader level, BlockPos pos, Player player)
     {
-        return new ItemStack(ModItems.STARFLIES_JAR.get());
+        return new ItemStack(ModBlocks.STARFLIES_JAR.get());
     }
 
     @Override
@@ -81,17 +82,17 @@ public class StarfliesBlock extends Block
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult)
     {
-        if (!level.isClientSide && stack.is(ModItems.JAR))
+        if (!level.isClientSide && stack.is(ModBlocks.JAR.asItem()))
         {
             stack.consume(1, player);
             player.setItemInHand(hand, stack);
-            player.addItem(new ItemStack(ModItems.STARFLIES_JAR.get()));
+            player.addItem(new ItemStack(ModBlocks.STARFLIES_JAR.get()));
 
             level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());
             return ItemInteractionResult.SUCCESS;
         }
 
-        if (level.isClientSide && stack.is(ModItems.JAR)) return ItemInteractionResult.SUCCESS;
+        if (level.isClientSide && stack.is(ModBlocks.JAR.asItem())) return ItemInteractionResult.SUCCESS;
 
         return ItemInteractionResult.SKIP_DEFAULT_BLOCK_INTERACTION;
     }

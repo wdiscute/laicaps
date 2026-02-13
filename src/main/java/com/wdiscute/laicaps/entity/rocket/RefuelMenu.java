@@ -1,7 +1,7 @@
 package com.wdiscute.laicaps.entity.rocket;
 
-import com.wdiscute.laicaps.ModItems;
-import com.wdiscute.laicaps.ModMenuTypes;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Inventory;

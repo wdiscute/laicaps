@@ -3,7 +3,7 @@ package com.wdiscute.laicaps.item;
 import com.mojang.blaze3d.platform.InputConstants;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.wdiscute.laicaps.Laicaps;
-import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.Payloads;
+import com.wdiscute.laicaps.registry.io.Payloads;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.GameRenderer;

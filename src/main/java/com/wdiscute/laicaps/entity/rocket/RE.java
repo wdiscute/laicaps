@@ -1,9 +1,11 @@
 package com.wdiscute.laicaps.entity.rocket;
 
-import com.wdiscute.laicaps.*;
 import com.wdiscute.laicaps.entity.rocket.rocketparts.*;
 import com.wdiscute.laicaps.mixin.JumpingAcessor;
-import com.wdiscute.laicaps.networkandcodecsandshitomgthissuckssomuchpleasehelp.Payloads;
+import com.wdiscute.laicaps.registry.io.Payloads;
+import com.wdiscute.laicaps.registry.ModBlocks;
+import com.wdiscute.laicaps.registry.ModItems;
+import com.wdiscute.laicaps.registry.ModParticles;
 import com.wdiscute.laicaps.util.AdvHelper;
 import com.wdiscute.laicaps.util.LaicapsKeys;
 import com.wdiscute.libtooltips.Tooltips;
@@ -352,7 +354,7 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
 
             ResourceKey<Level> key = null;
 
-            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER.get()))
+            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY.get()))
             {
                 key = LaicapsKeys.EMBER;
 
@@ -366,7 +368,7 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
                 }
             }
 
-            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA.get()))
+            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY.get()))
             {
                 key = LaicapsKeys.ASHA;
 
@@ -380,12 +382,12 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
                 }
             }
 
-            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD.get()))
+            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY.get()))
             {
                 key = Level.OVERWORLD;
             }
 
-            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR.get()))
+            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY.get()))
             {
                 key = LaicapsKeys.LUNAMAR;
 
@@ -630,12 +632,12 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
         if (spToCheck == null) return !entityData.get(MISSING_KNOWLEDGE);
 
         //return if player has discovered the planet selected
-        if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER))
+        if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY))
             return AdvHelper.hasAdvancement(spToCheck, "ember_discovered");
-        if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA))
+        if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY))
             return AdvHelper.hasAdvancement(spToCheck, "asha_discovered");
-        if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD)) return true;
-        if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR))
+        if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY)) return true;
+        if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY))
             return AdvHelper.hasAdvancement(spToCheck, "lunamar_discovered");
 
         return false;
@@ -653,46 +655,46 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
 
         if (dimension == LaicapsKeys.EMBER)
         {
-            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER)) fuelRequired = 120;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA)) fuelRequired = 490;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD)) fuelRequired = 700;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR)) fuelRequired = 1240;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY)) fuelRequired = 490;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 700;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 1240;
             isCurrentDimensionUnknown = false;
         }
 
         if (dimension == LaicapsKeys.ASHA)
         {
-            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER)) fuelRequired = 490;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA)) fuelRequired = 120;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD)) fuelRequired = 330;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR)) fuelRequired = 870;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY)) fuelRequired = 490;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 330;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 870;
             isCurrentDimensionUnknown = false;
         }
 
         if (dimension == LaicapsKeys.OVERWORLD)
         {
-            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER)) fuelRequired = 790;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA)) fuelRequired = 330;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD)) fuelRequired = 120;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR)) fuelRequired = 660;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY)) fuelRequired = 790;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY)) fuelRequired = 330;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 660;
             isCurrentDimensionUnknown = false;
         }
 
         if (dimension == LaicapsKeys.LUNAMAR)
         {
-            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER)) fuelRequired = 1240;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA)) fuelRequired = 870;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD)) fuelRequired = 660;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY)) fuelRequired = 1240;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY)) fuelRequired = 870;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 660;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 120;
             isCurrentDimensionUnknown = false;
         }
 
         if (isCurrentDimensionUnknown)
         {
-            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER)) fuelRequired = 120;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA)) fuelRequired = 120;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD)) fuelRequired = 120;
-            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.EMBER_ENTRY)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.ASHA_ENTRY)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.OVERWORLD_ENTRY)) fuelRequired = 120;
+            if (entityData.get(PLANET_SELECTED).is(ModItems.LUNAMAR_ENTRY)) fuelRequired = 120;
         }
 
         return ((int) (fuelAvailable - fuelRequired));
@@ -779,7 +781,7 @@ public class RE extends Entity implements PlayerRideable, MenuProvider
     protected void defineSynchedData(SynchedEntityData.Builder builder)
     {
         builder.define(STATE, 0);
-        builder.define(PLANET_SELECTED, new ItemStack(ModItems.OVERWORLD.get()));
+        builder.define(PLANET_SELECTED, new ItemStack(ModItems.OVERWORLD_ENTRY.get()));
         builder.define(FUEL, 0);
         builder.define(DOOR, false);
         builder.define(JUMPING, 0);

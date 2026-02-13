@@ -1,34 +1,25 @@
 package com.wdiscute.laicaps.entity.magmaboss.magma;
 
-import com.wdiscute.laicaps.ModDataSerializers;
+import com.wdiscute.laicaps.registry.ModDataSerializers;
 import com.wdiscute.laicaps.entity.magmaboss.MagmaState;
 import com.wdiscute.laicaps.entity.magmaboss.rock.RockEntity;
 import com.wdiscute.laicaps.entity.magmaboss.shield.ShieldEntity;
-import io.netty.buffer.ByteBuf;
-import net.minecraft.core.BlockPos;
-import net.minecraft.network.codec.ByteBufCodecs;
-import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.util.ByIdMap;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageSources;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 
-import javax.xml.transform.stax.StAXSource;
 import java.util.List;
 import java.util.Random;
-import java.util.function.IntFunction;
 
 public class MagmaEntity extends Monster
 {

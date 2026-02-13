@@ -1,12 +1,11 @@
 package com.wdiscute.laicaps.block.symbol;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModItems;
+import com.wdiscute.laicaps.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;

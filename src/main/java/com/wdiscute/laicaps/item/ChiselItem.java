@@ -1,6 +1,6 @@
 package com.wdiscute.laicaps.item;
 
-import com.wdiscute.laicaps.ModSounds;
+import com.wdiscute.laicaps.registry.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;

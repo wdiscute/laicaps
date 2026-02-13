@@ -1,8 +1,8 @@
 package com.wdiscute.laicaps.block.single;
 
 import com.mojang.serialization.MapCodec;
-import com.wdiscute.laicaps.ModTags;
-import com.wdiscute.laicaps.ModBlocks;
+import com.wdiscute.laicaps.registry.ModTags;
+import com.wdiscute.laicaps.registry.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;
